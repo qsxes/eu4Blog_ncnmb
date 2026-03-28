@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>君主正面特质</title>
+    <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pjCSS/all.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">ncnmb的欧陆风云4日志</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="bioLinks">
+                        <i class="bi bi-link"></i>
+                        ncnmb的社交媒体
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://space.bilibili.com/3546972220819463?spm_id_from=333.1007.0.0"><i class="bi bi-tv-fill"></i>bilibili</a></li>
+                        <li><a class="dropdown-item" href="https://tieba.baidu.com/home/main?id=tb.1.5cdda606.whVGonaMXrmknIO1TGdfHA&fr=personalize_page"><i class="bi bi-clipboard"></i>贴吧</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/qsxes"><i class="bi bi-github"></i>github</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/@ncnmb"><i class="bi bi-youtube"></i>youtube</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">欢迎各位追踪我的各个平台账号:<br><br>->b站和YouTube有长视频版本<br>->贴吧和本网站提供文字版本<br>->github可下载离线网页备份</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-link-45deg"></i>
+                        友情链接
+                    </a>
+                    <ul class="dropdown-menu friendLinks">
+                        <li><a class="dropdown-item" href="https://tieba.baidu.com/f?kw=%E6%AC%A7%E9%99%86%E9%A3%8E%E4%BA%914&fr=personalize_page"><i class="bi bi-link-45deg"></i>欧陆风云4贴吧</a></li>
+                        <li><a class="dropdown-item" href="https://eu4cn.com"><i class="bi bi-link-45deg"></i>欧陆风云4中文维基</a></li>
+                        <li><a class="dropdown-item" href="https://anbennar.fandom.com/wiki/Anbennar_Wiki"><i class="bi bi-link-45deg"></i>安本纳尔官方维基</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-tools"></i>
+                        工具页面
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="consoleCode.html"><i class="bi bi-code-slash"></i>控制台代码集合</a></li>
+                        <li><a class="dropdown-item" href="usefulEvent.html"><i class="bi bi-code-slash"></i>有用控制台事件集合</a></li>
+                        <li><a class="dropdown-item" href="goodTrait.html"><i class="bi bi-code-slash"></i>君主特质</a></li>
+                        <li><a class="dropdown-item" href="picture.html"><i class="bi bi-file-zip"></i>原版加载图片资源</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" onsubmit="return false">
+                <input class="form-control me-2" type="search" placeholder="请输入关键字" aria-label="Search" id="keyWordInput" data-bs-toggle="popover"
+                       data-bs-trigger="focus"
+                       data-bs-title="输入框为空时,点击“搜索”复原"
+                       data-bs-content=""
+                       tabindex="0">
+                <button class="btn btn-outline-success" type="submit" id="search">搜索</button>
+            </form>
+        </div>
+    </div>
+</nav>
+    <div class="container" id="consoleCode">
+        <div class="container">
+            <table class="mildtable sortable jquery-tablesorter table table-striped" style="width:100%">
+                <thead>
+                <th style="width:350px" class="headerSort" tabindex="0" role="columnheader button" title="升序排列">特质
+                </th>
+                <th class="unsortable" style="width:250px">效果
+                </th>
+                <th class="unsortable">AI统治者将会
+                </th>
+                <th class="unsortable">前提条件与权重修正
+                </th>
+                <th class="headerSort" tabindex="0" role="columnheader button" title="升序排列">自定义国家
+                </th>
+                </thead><tbody>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Just</div><div style="font-weight: bold; font-size:larger;">公正<span id="公正"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者处事公正。由于他对国家内许多法律和风俗习惯有独到的见解，我们的臣民都相信自己处于正确而公正的领导下。</div></div></div></td>
+                <td> <span class="effect-green"><b>−2</b></span> 全国叛乱度</td>
+                <td>更愿意选择与自己体量相当的对手。
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更愿意开启一场公平的战争。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>0.50× declare wars (weaker targets)</li></ul>
+                        </div>
+                    </div></td>
+                <td>No 残暴
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 行政技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Righteous</div><div style="font-weight: bold; font-size:larger;">正义<span id="正义"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者为人正义。我们的人民不会轻易质疑我们的权威，因为他们知道正义的统治者永远以他们的利益为重。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>+1.0</b></span> 年度正统性</li>
+                        <li> <span class="effect-green"><b>+0.5</b></span> 年度共和传统</li></ul>
+                </div></td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更愿意开启一场公平的战争。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>0.75× declare wars (weaker targets)</li></ul>
+                    </div>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>是 是 君主制或 共和制国家</li>
+                        <li>No 天朝</li>
+                        <li>No 草原游牧部落</li>
+                        <li>No 土著议会</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 行政技能</li>
+                                <li><span class="effect-green"><b>1×</b></span> （统治者）是新王朝</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Tolerant</div><div style="font-weight: bold; font-size:larger;">宽容<span id="宽容"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者待人宽容。宗教中的少数派将会在我们的领土上茁壮成长。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>+1</b></span> 异端容忍</li>
+                        <li> <span class="effect-green"><b>+1</b></span> 异教容忍</li></ul>
+                </div></td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更有可能与异端国家结盟。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>+10 heretic ally acceptance</li></ul>
+                    </div>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更有可能与异教国家结盟。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>+20 heathen ally acceptance</li></ul>
+                        </div>
+                    </div></td>
+                <td><div class="plainlist">
+                    <ul><li>No 天马行空</li>
+                        <li>No 狂热</li>
+                        <li>No 宗教理念组</li>
+                        <li>是 至少拥有一个非国教省份，或与不同信仰国家相邻</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 国教<b>不是</b>主要宗教</li>
+                                <li><span class="effect-green"><b>1×</b></span> 已解锁 人文理念组</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Kind-Hearted</div><div style="font-weight: bold; font-size:larger;">心地善良<span id="心地善良"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者心地善良。他对国内普罗大众的关爱让他深受爱戴。同时，我们的国家更能经受艰苦岁月的磨砺，尤其是战火的洗涤。</div></div></div></td>
+                <td> <span class="effect-green"><b>−0.05</b></span> 月度厌战度</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更经常送出礼物。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>+65% gift sending chance</li></ul>
+                    </div>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更有可能加入一个同盟。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>+10 alliance acceptance</li></ul>
+                        </div>
+                    </div></td>
+                <td><div class="plainlist">
+                    <ul><li>No 残暴</li>
+                        <li>No 歹毒</li></ul>
+                </div></td>
+                <td><span class="effect-red"><b>+5</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Free Thinker</div><div style="font-weight: bold; font-size:larger;">天马行空<span id="天马行空"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者思维发散。他不受严格的教条束缚，鼓励每一个人尝试新事物并自由地思考将来将让我们伟大的国家走向何方。</div></div></div></td>
+                <td> <span class="effect-green"><b>−5%</b></span> 理念花费</td>
+                <td>进行更多的思潮分享。</td>
+                <td><div class="plainlist">
+                    <ul><li>No 谨慎</li>
+                        <li>No 宽容</li>
+                        <li>No 狂热</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 行政技能</li>
+                                <li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li>
+                                <li><span class="effect-green"><b>1×</b></span> 至少  6 军事技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Well Connected</div><div style="font-weight: bold; font-size:larger;">人脉通达<span id="人脉通达"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者人脉通达。我们的宫廷和内阁都得益于他那张网罗了当代巨擘的宽广人脉网。</div></div></div></td>
+                <td> <span class="effect-green"><b>−20%</b></span> 顾问花费</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>其他AI更可能间接帮助他们。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>2× other AI help us</li></ul>
+                    </div>
+                </div></td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li>
+                            <li><span class="effect-green"><b>1×</b></span> （统治者/继承人）是外国人</li>
+                            <li><span class="effect-green"><b>1×</b></span> 至少 5 王室联姻</li></ul>
+                    </div>
+                </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Calm</div><div style="font-weight: bold; font-size:larger;">冷静<span id="冷静"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者处变不惊。他从不动怒、从不失态，因此能够以身作则，思考周密，让我们得以从任何危机中全身而退。</div></div></div></td>
+                <td> <span class="effect-green"><b>−10%</b></span> 稳定度花费</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更不可能开启战争。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>0.50× declare wars</li>
+                            <li>0.75× declare wars (weaker targets)</li></ul>
+                    </div>
+                </div></td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li><span class="effect-green"><b>1×</b></span> （统治者/继承人）<b>不是</b> 将军</li></ul>
+                    </div>
+                </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Careful</div><div style="font-weight: bold; font-size:larger;">谨慎<span id="谨慎"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者行事谨慎。通过谨慎地在各国之间斡旋，他能够尽量减少我们造成的过失对我们的不利影响。</div></div></div></td>
+                <td> <span class="effect-green"><b>−10%</b></span> 侵略扩张影响</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>高估敌人力量。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>1.2× enemy strength</li></ul>
+                    </div>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更愿意进行一边倒的战争。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>0.4× declare wars</li></ul>
+                        </div>
+                    </div></td>
+                <td><div class="plainlist">
+                    <ul><li>No 勇士</li>
+                        <li>No 天马行空</li>
+                        <li>No 天真的狂热者</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+5</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Secretive</div><div style="font-weight: bold; font-size:larger;">守口如瓶<span id="守口如瓶"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者守口如瓶。他本能地知道闭门磋商和信件加密的必要性，这让我们整个政府难以被敌国渗透。</div></div></div></td>
+                <td> <span class="effect-green"><b>+20%</b></span> 外国间谍察觉</td>
+                <td>更愿意使用遣外雇佣军团。</td>
+                <td>No 大嘴巴
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Intricate Webweaver</div><div style="font-weight: bold; font-size:larger;">暗中策划者<span id="暗中策划者"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者善于暗中网罗情报。他不断策划新的密谋，能够亲自参与大量外国情报工作。</div></div></div></td>
+                <td> <span class="effect-green"><b>+30%</b></span> 间谍网建设</td>
+                <td>更愿意使用遣外雇佣军团。</td>
+                <td><div class="plainlist">
+                    <ul><li>No 大嘴巴</li>
+                        <li> 至少 3 行政技能</li>
+                        <li>是 需探明至少一个其他国家</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Fertile</div><div style="font-weight: bold; font-size:larger;">枝繁叶茂<span id="枝繁叶茂"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者生育能力很强大。由于我们统治者多子多福，我们在将来很长一段时间都不必担忧继承人的问题。</div></div></div></td>
+                <td> <span class="effect-green"><b>+50%</b></span> 新继承人的几率</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更有可能结婚。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>+20 royal marriage acceptance</li></ul>
+                    </div>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>No 枯枝败叶</li>
+                        <li>采用继承人机制的君主制国家</li>
+                        <li>No 奥斯曼帝国政府</li>
+                        <li>No 采用议会派/君主主义者机制</li>
+                        <li>低于 35 岁</li></ul>
+                </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Well Advised</div><div style="font-weight: bold; font-size:larger;">兼听兼信<span id="兼听兼信"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者能做到兼听兼信。他总是乐于聆听明智的谏言，这吸引了许多贤士来到我们的宫廷。</div></div></div></td>
+                <td> <span class="effect-green"><b>+1</b></span> 可能的顾问</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更愿意进行一边倒的战争。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>0.6× declare wars</li></ul>
+                    </div>
+                </div></td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li></ul>
+                    </div>
+                </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Benevolent</div><div style="font-weight: bold; font-size:larger;">宽厚仁爱<span id="宽厚仁爱"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者温和宽仁。乐于行善的名声是一笔巨大的财富，这能帮助我们安抚我们的臣民。</div></div></div></td>
+                <td> <span class="effect-green"><b>−5%</b></span> 附属国独立倾向</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更经常送出礼物。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>+25% Gift sending chance</li></ul>
+                    </div>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>No 歹毒</li>
+                        <li> 至少 3 外交技能</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li>
+                                <li><span class="effect-green"><b>1×</b></span> 拥有至少  2 附庸国</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Zealot</div><div style="font-weight: bold; font-size:larger;">狂热<span id="狂热"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者狂热敬神。我们的统治者狂热地将一切投入到正统信仰之中，激励着更多人皈依国教。</div></div></div></td>
+                <td> <span class="effect-green"><b>+1%</b></span> 传教力量</td>
+                <td><div class="plainlist">
+                    <ul><li>觊觎毗邻的异端国家的土地。</li>
+                        <li>觊觎毗邻的异教国家的土地。</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更少可能与异端国家结盟。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>−1000 heretic ally acceptance</li></ul>
+                        </div>
+                    </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更少可能与异教国家结盟。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>−1000 heathen ally acceptance</li></ul>
+                        </div>
+                    </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>彻底敌视其它宗教。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>2× declare wars on other religions</li></ul>
+                        </div>
+                    </div></td>
+                <td><div class="plainlist">
+                    <ul><li>No 天马行空</li>
+                        <li>No 放纵不羁</li>
+                        <li>No 宽容</li>
+                        <li>No 人文理念组</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.5×</b></span> 如果国教是主要宗教，但有省份信仰其他宗教</li>
+                                <li><span class="effect-green"><b>1×</b></span> 拥有至少  2 传教士</li>
+                                <li><span class="effect-green"><b>1×</b></span> 与宗教敌人接壤</li>
+                                <li><span class="effect-green"><b>1×</b></span> 是信仰守护者</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Pious</div><div style="font-weight: bold; font-size:larger;">虔诚<span id="虔诚"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者虔诚无比。他虔敬的精神将确保我国能走上正道，而不会迷失自我，同时，这也将激发我们对自己信仰的信心。</div></div></div></td>
+                <td> <span class="effect-green"><b>+1</b></span> 年度奉献度</td>
+                <td>如果他们控制了教宗的话将更多地使用绝罚的行动。
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更少可能与异端国家结盟。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>−30 heretic ally acceptance</li></ul>
+                        </div>
+                    </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>彻底敌视其它宗教。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>1.5× declare wars on other religions</li></ul>
+                        </div>
+                    </div></td>
+                <td><div class="plainlist">
+                    <ul><li>No 放纵不羁</li>
+                        <li>No 罪人</li>
+                        <li>No 配偶</li>
+                        <li>是 是神权制国家</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 国教是主要宗教</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Lawgiver</div><div style="font-weight: bold; font-size:larger;">立法者<span id="立法者"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是一位立法者。法律是建立、统合国家的基础。我们的统治者致力于精简法律条文，以完成一套更加公正，更加符合中央集权思想的法令体系。</div></div></div></td>
+                <td> <span class="effect-green"><b>−0.05</b></span> 月度自治度变化</td>
+                <td>更有可能采取特定的理念组。</td>
+                <td> 至少 3 行政技能
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 行政技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+5</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Midas Touched</div><div style="font-weight: bold; font-size:larger;">点石成金<span id="点石成金"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者能够点石成金。他的才能让每一个有利可图的机会都为国家创造财富。只要他一息尚存，我国的财源就不会枯竭。</div></div></div></td>
+                <td> <span class="effect-green"><b>+10%</b></span> 全国税收修正</td>
+                <td><div class="plainlist">
+                    <ul><li>在和平条约中要求金币。</li>
+                        <li>更有可能采取特定的理念组。</li></ul>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>No 贪婪</li>
+                        <li> 至少 3 行政技能</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 行政技能</li>
+                                <li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Incorruptible</div><div style="font-weight: bold; font-size:larger;">清正廉洁<span id="清正廉洁"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者清正廉洁。从多个方面看来，现代国家的建设就是一场反腐斗争。政府官员总是千方百计地收受贿赂，提携亲友似乎总是人之常情。我们的统治者坚决抵制这股不正之风，为全国上下树立了一个好榜样。</div></div></div></td>
+                <td> <span class="effect-green"><b>−0.05</b></span> 年度腐败度</td>
+                <td>不惜一切代价避免贬值他们的货币。
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更少送出礼物。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>−50 gift chance</li></ul>
+                        </div>
+                    </div></td>
+                <td><div class="plainlist">
+                    <ul><li>No 腐败</li>
+                        <li> 至少 3 行政技能</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 行政技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Architectural Visionary</div><div style="font-weight: bold; font-size:larger;">能工巧匠<span id="能工巧匠"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者在建设方面富有远见。改善基础设施对这个时代的任何国家来说都万分重要，他就是可担此大任的能人。我们的统治者拥有宏大的设想，又善于理解他人意图，还掌握节俭的艺术，他是我国的无价之宝。</div></div></div></td>
+                <td> <span class="effect-green"><b>−10%</b></span> 建设花费</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>在建筑上花费更多。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>1.8× building budget</li></ul>
+                    </div>
+                </div></td>
+                <td>No 完美主义强迫症
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 行政技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Scholar</div><div style="font-weight: bold; font-size:larger;">学者<span id="学者"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是一位学者。他那要洞悉万物的渴望让他能先于众人有效地理解并推行全新的技术。</div></div></div></td>
+                <td> <span class="effect-green"><b>−5%</b></span> 科技花费</td>
+                <td><div class="plainlist">
+                    <ul><li>进行更多的思潮分享。</li>
+                        <li>花费更多来解锁思潮。</li></ul>
+                </div></td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 行政技能</li>
+                            <li><span class="effect-red"><b>0.5×</b></span> （统治者/继承人）是 将军</li></ul>
+                    </div>
+                </div></td>
+                <td><span class="effect-red"><b>+5</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Entrepreneur</div><div style="font-weight: bold; font-size:larger;">实业家<span id="实业家"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是个实业家。他能看透层层阻隔，把握种种机遇，看出新计划的潜力，能为我国经济发展提出各种有益的计划。</div></div></div></td>
+                <td> <span class="effect-green"><b>+10%</b></span> 贸易效率</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>在建筑上花费更多。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>1.5× building budget</li></ul>
+                    </div>
+                </div></td>
+                <td>No 放纵不羁
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li>
+                                <li><span class="effect-green"><b>1×</b></span> 采用商业共和制机制</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Industrious</div><div style="font-weight: bold; font-size:larger;">勤政<span id="勤政"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者勤于政事。他从不满足于片刻休息，通过日复一日的工作，我们的统治者不断对国境内每个省份施行尽可能细化的管理，以使各资源的产量和国库的收入达到最大化。</div></div></div></td>
+                <td> <span class="effect-green"><b>+10%</b></span> 商品产出修正</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>在建筑上花费更多。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>1.2× building budget</li></ul>
+                    </div>
+                </div>
+                    <p>更有可能采取特定的理念组。
+                    </p></td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li>
+                            <li><span class="effect-green"><b>1×</b></span> 采用商业共和制机制</li></ul>
+                    </div>
+                </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Expansionist</div><div style="font-weight: bold; font-size:larger;">开疆扩土<span id="开疆扩土"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者热衷于开疆拓土。我们的统治者亲自参与新土地的宣称拓殖和移民定居工作。他致力于确保殖民扩张在我国处于首要地位。</div></div></div></td>
+                <td> <span class="effect-green"><b>+15</b></span> 全国移民增长</td>
+                <td>更愿意寻求建立殖民地。
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>开战时有特定针对的目标。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>2× war priority on primitives</li></ul>
+                        </div>
+                    </div></td>
+                <td> 拥有至少 1 殖民者
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li>
+                                <li><span class="effect-green"><b>1×</b></span> 至少 1 征服者或探险家</li>
+                                <li><span class="effect-green"><b>1×</b></span> 至少 2 征服者或探险家</li>
+                                <li><span class="effect-green"><b>1×</b></span> 已解锁 扩展和 探索理念组</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Charismatic Negotiator</div><div style="font-weight: bold; font-size:larger;">魅力非凡的说客<span id="魅力非凡的说客"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是个魅力非凡的说客。通过亲自参与外交谈判，我们的统治者能够让别国常常以别的方式看待我们的行为。</div></div></div></td>
+                <td> <span class="effect-green"><b>+1</b></span> 外交声誉</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>与其他AI国家协商更有利的和平条款。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>+10 other AI peace term bonus</li></ul>
+                    </div>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>No 喋喋不休的小丑</li>
+                        <li> 至少 3 外交技能</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1.5×</b></span> 至少  6 外交技能</li>
+                                <li><span class="effect-red"><b>0.5×</b></span> （统治者/继承人）是 将军</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Silver Tongue</div><div style="font-weight: bold; font-size:larger;">能言善道<span id="能言善道"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者能言善道。在我们与别国的交流中，我们的统治者能够示人以我们过去行为影响良好的一面。一旦我们的邻国了解到我们行为的真正原因，他们就能长期谅解我们的行动。</div></div></div></td>
+                <td> <span class="effect-green"><b>+20%</b></span> 改善关系</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>其他AI更少可能向他们宣战。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>0.5× other AI war chance</li></ul>
+                    </div>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>No 喋喋不休的小丑</li>
+                        <li>No 天真的狂热者</li>
+                        <li> 至少 3 外交技能</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1.5×</b></span> 至少  6 外交技能</li>
+                                <li><span class="effect-red"><b>0.5×</b></span> （统治者/继承人）是 将军</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Conqueror</div><div style="font-weight: bold; font-size:larger;">征服者<span id="征服者"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是一位征服者。在他的统治下，我们能够有效地将更多土地变成我们国土的一部分。</div></div></div></td>
+                <td> <span class="effect-green"><b>−5</b></span> 分离主义年数</td>
+                <td>觊觎任何可能获得的毗邻土地。
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更有可能开启战争。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>1.75× declare wars</li></ul>
+                        </div>
+                    </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更愿意进行一边倒的战争。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>2× declare wars (weaker targets)</li></ul>
+                        </div>
+                    </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更少送出礼物。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>−50 gift chance</li></ul>
+                        </div>
+                    </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>在建筑上花费更少。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>0.2× building budget</li></ul>
+                        </div>
+                    </div></td>
+                <td> 至少 3 军事技能
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 军事技能</li>
+                                <li><span class="effect-green"><b>1×</b></span> （统治者/继承人）是 将军</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Tactical Genius</div><div style="font-weight: bold; font-size:larger;">战术天才<span id="战术天才"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是一位战术天才。他在战场机动和虚实方面的强烈兴趣和刻苦钻研，将会使我们所有将领对这些事务产生更大的兴趣，积攒宝贵的经验。</div></div></div></td>
+                <td> <span class="effect-green"><b>+1</b></span> 陆军将领机动</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更愿意进行一边倒的战争。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>1.4× declare wars (weaker targets)</li></ul>
+                    </div>
+                </div></td>
+                <td> 至少 3 军事技能
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 军事技能</li>
+                                <li><span class="effect-green"><b>1×</b></span> （统治者/继承人）是 将军</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Bold Fighter</div><div style="font-weight: bold; font-size:larger;">勇士<span id="勇士"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者争勇斗狠。他相信搏斗对战场局势有重大影响。我们的统治者是无畏的征服者，他激励众人带领部队向敌阵冲锋。这种勇气应当是可贵的。</div></div></div></td>
+                <td> <span class="effect-green"><b>+1</b></span> 陆军将领冲击</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>低估敌人力量。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>0.85× enemy strength</li></ul>
+                    </div>
+                </div></td>
+                <td>No 谨慎
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 军事技能</li>
+                                <li><span class="effect-green"><b>1×</b></span> （统治者/继承人）是 将军</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Strict</div><div style="font-weight: bold; font-size:larger;">治军严明<span id="治军严明"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者治军严明。由于他对部队的行为规范有极大兴趣，他向上上下下每一个人灌输严格的纪律意识。</div></div></div></td>
+                <td> <span class="effect-green"><b>+5%</b></span> 训练度</td>
+                <td><div class="plainlist">
+                    <ul><li>不惜一切代价避免贬值他们的货币。</li>
+                        <li>尽其所能地避免贷款。</li></ul>
+                </div></td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 军事技能</li>
+                            <li><span class="effect-green"><b>1×</b></span> （统治者/继承人）是 将军</li></ul>
+                    </div>
+                </div></td>
+                <td><span class="effect-red"><b>+5</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Inspiring Leader</div><div style="font-weight: bold; font-size:larger;">鼓舞人心<span id="鼓舞人心"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者能够鼓舞人心。他优秀的领导指引最怯懦的人找到勇气。</div></div></div></td>
+                <td> <span class="effect-green"><b>+5%</b></span> 陆军士气</td>
+                <td>—</td>
+                <td><div class="plainlist">
+                    <ul><li>No 怯懦</li>
+                        <li> 至少 3 军事技能</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 军事技能</li>
+                                <li><span class="effect-green"><b>1×</b></span> （统治者/继承人）是 将军</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+5</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Martial Educator</div><div style="font-weight: bold; font-size:larger;">军事教育家<span id="军事教育家"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是个军事教育家。当前部队中军官团队的训练和教育是我们的首要任务。</div></div></div></td>
+                <td> <span class="effect-green"><b>−1%</b></span> 年度陆军传统衰减</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更愿意进行一边倒的战争。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>1.2× declare wars (weaker targets)</li></ul>
+                    </div>
+                </div>
+                    <p>更有可能采取特定的理念组。
+                    </p></td>
+                <td> 至少 3 军事技能
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 军事技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Navigator</div><div style="font-weight: bold; font-size:larger;">航海家<span id="航海家"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是一位航海家。他亲自参与各种航线制定、采购事宜以及有关航海的条令规定，以确保我们的船只永远不会像我们的邻国那样迷失航向。</div></div></div></td>
+                <td> <span class="effect-green"><b>+10%</b></span> 船只耐久度</td>
+                <td><div class="plainlist">
+                    <ul><li>更多地使用探险家。</li>
+                        <li>更有可能采取特定的理念组。</li></ul>
+                </div></td>
+                <td>拥有至少 1 本土港口
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Fierce Negotiator</div><div style="font-weight: bold; font-size:larger;">唇枪舌剑<span id="唇枪舌剑"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是言辞激烈的谈判专家。我们将更容易说服雇佣兵首领以更低廉的价格为我们而战。</div></div></div></td>
+                <td> <span class="effect-green"><b>−25%</b></span> 雇佣兵维护费用</td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更固执地不愿在战争中投降。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>−20 peace desire</li></ul>
+                    </div>
+                </div></td>
+                <td> 至少 3 外交技能
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Reformist</div><div style="font-weight: bold; font-size:larger;">改革家<span id="改革家"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是一名改革家。为了国家的稳定和强盛，我们的统治者准备对现有的制度进行改革，以实现国家的现代化。</div></div></div></td>
+                <td> <span class="effect-green"><b>+25%</b></span> 政府改革进度增长</td>
+                <td>更有可能采取特定的理念组。</td>
+                <td> 至少 4 外交技能
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 外交技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+5</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Humane</div><div style="font-weight: bold; font-size:larger;">仁德<span id="仁德"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者宅心仁厚。慈爱宽悯，坚守正道是我们统治者的待人之道。</div></div></div></td>
+                <td> <span class="effect-green"><b>+0.05</b></span> 天命值增长修正</td>
+                <td>更愿意选择与自己体量相当的对手。
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更经常送出礼物。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>+30% gift sending chance</li></ul>
+                        </div>
+                    </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更有可能加入一个同盟。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>+5 alliance acceptance</li></ul>
+                        </div>
+                    </div></td>
+                <td><div class="plainlist">
+                    <ul><li>是 DLC 天命已激活</li>
+                        <li>是 天朝</li>
+                        <li>No 狭隘</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>−0.33×</b></span> 少于 贤能值</li>
+                                <li><span class="effect-green"><b>0.5×</b></span> 至少 贤能值</li>
+                                <li><span class="effect-green"><b>0.75×</b></span> 至少  6 外交技能</li>
+                                <li><span class="effect-green"><b>0.75×</b></span> 至少  6 行政技能</li>
+                                <li><span class="effect-green"><b>0.75×</b></span> 至少  6 军事技能</li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Legendary Pirate</div><div style="font-weight: bold; font-size:larger;">传奇海盗<span id="传奇海盗"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者作为横行七海的传奇海盗而闻名于世。你的统治者以谋略胜过无数的舰队，通晓每一道海风的方向。你的统治者一旦掌权，海军的质量就不再是问题。<br><b>传奇海盗无需花费共和传统即可连任。</b></div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>+25%</b></span> 私掠效率</li>
+                        <li> <span class="effect-green"><b>+2</b></span> 海军将领冲击</li>
+                        <li> <span class="effect-green"><b>−1%</b></span> 年度海军传统衰减</li></ul>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>会随机地羞辱你。</li>
+                        <li>喜欢焚掠和劫掠。</li>
+                        <li>对其它宗教抱有更少敌意。</li></ul>
+                </div></td>
+                <td>升起黑旗并且是 海盗共和国
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>−2</b></span></li></ul>
+                        </div>
+                    </div></td>
+                <td><span class="effect-red"><b>+10</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Legendary Conqueror</div><div style="font-weight: bold; font-size:larger;">传奇征服者<span id="传奇征服者"></span></div><div style="line-height: 1.2em; font-size:smaller;">这位统治者是经胜利战火百般锤炼的征服者，其文韬武略足以使其名彪青史，与历史上最伟大、最受称颂的征服者并驾齐驱。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>+10%</b></span> 冲击伤害</li>
+                        <li> <span class="effect-green"><b>−5</b></span> 分离主义年数</li></ul>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>更愿意开启一边倒的战争。</li>
+                        <li>更愿意开启战争。</li>
+                        <li>更少送出礼物。</li>
+                        <li>更少建造建筑。</li></ul>
+                </div></td>
+                <td>
+                    <p>完成帖木儿任务#脱脱迷失的遗产
+                    </p><p><br>
+                    完成下列任务将一次性获得该特质，<b>但后续无法再次获得</b>：
+                </p>
+                    <ul><li>法兰西任务#荣光之城</li>
+                        <li>蒙兀儿斯坦任务#剿除红巾军</li>
+                        <li>蒙古任务#剿除红巾军</li>
+                        <li>鞑靼任务#剿除红巾军</li></ul>
+                    <p><br>
+                        下列统治者/继承人亦拥有此特质：
+                    </p>
+                    <ul><li>完成满洲任务#支配敌对女真部落获得的努尔哈赤</li>
+                        <li> 阿兹特克 蒙特祖玛（4/3/5）</li>
+                        <li> 库斯科 帕查库蒂（4/3/5）</li>
+                        <li> 库斯科 图帕克 尤潘基（5/3/6）</li></ul></td>
+                <td><span class="effect-red"><b>+10</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Great Engineer</div><div style="font-weight: bold; font-size:larger;">伟大工程师<span id="伟大工程师"></span></div><div style="line-height: 1.2em; font-size:smaller;">这位统治者在建筑方面富有远见、敢为人先。不管是满足自己对荣耀的热忱追逐，还是为了我们人民的福祉，我们的统治者在建筑的策划和实施方面有着超乎常人的天分。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>-15%</b></span> 建筑花费</li>
+                        <li> <span class="effect-green"><b>-50%</b></span> 建筑时间</li></ul>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>更愿意建造建筑。</li></ul>
+                </div></td>
+                <td>
+                    <p>完成帖木儿任务#古代继承者
+                    </p><p><br>
+                    完成下列任务将一次性获得该特质，<b>但后续无法再次获得</b>：
+                </p>
+                    <ul><li>中华任务#京杭大运河</li>
+                        <li>日本任务#扩建五街道</li></ul></td>
+                <td><span class="effect-red"><b>+10</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Patron of Arts</div><div style="font-weight: bold; font-size:larger;">艺术赞助人<span id="艺术赞助人"></span></div><div style="line-height: 1.2em; font-size:smaller;">这位统治者是著名的艺术赞助人。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>-5%</b></span> 科技花费</li>
+                        <li> <span class="effect-green"><b>-5%</b></span> 理念花费</li></ul>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>进行更多的思潮分享。</li></ul>
+                </div></td>
+                <td>No 吹毛求疵
+                    <div class="plainlist">
+                        <ul><li>下列条件满足其一：</li>
+                            <li> 至少 4 行政技能</li>
+                            <li>完成帖木儿任务#帖木儿黄金时代</li></ul>
+                    </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1×</b></span> 至少  6 行政技能</li></ul>
+                        </div>
+                    </div>
+                    <ul><li><span class="effect-green"><b>1×</b></span> 完成帖木儿任务#帖木儿黄金时代</li></ul></td>
+                <td><span class="effect-red"><b>+5</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Papal Puppeteer</div><div style="font-weight: bold; font-size:larger;">教廷操弄者<span id="教廷操弄者"></span></div><div style="line-height: 1.2em; font-size:smaller;">这位统治者对圣父之位有着巨大的幕后影响力。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>+1</b></span> 年度威望</li>
+                        <li> <span class="effect-green"><b>-2</b></span> 天主教省份叛乱度</li></ul>
+                </div></td>
+                <td>
+                </td>
+                <td>只能通过法兰西任务#荣光之城获得该特质，<b>且后续无法再次获得</b></td>
+                <td><span class="effect-red"><b>+5</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Iron-Crowned</div><div style="font-weight: bold; font-size:larger;">加冕铁王冠<span id="加冕铁王冠"></span></div><div style="line-height: 1.2em; font-size:smaller;">这位统治者赢得了由火铸就的强大征服者的特质。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>-20%</b></span> 核心化花费</li>
+                        <li> <span class="effect-green"><b>-0.05</b></span> 月度厌战度</li></ul>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>更愿意开启一边倒的战争。</li>
+                        <li>更愿意开启战争。</li>
+                        <li>更少送出礼物。</li>
+                        <li>更少建造建筑。</li></ul>
+                </div> </td>
+                <td>
+                    <p>完成德意志任务#重建帝国
+                    </p><p><br>
+                    完成下列任务将一次性获得该特质，<b>但后续无法再次获得</b>：
+                </p>
+                    <ul><li>法兰西任务#解散帝国</li></ul></td>
+                <td><span class="effect-red"><b>+30</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Protector of the Little Folk</div><div style="font-weight: bold; font-size:larger;">小民的庇护者<span id="小民的庇护者"></span></div><div style="line-height: 1.2em; font-size:smaller;">保护小民不受强者的侵害是这位领袖的使命。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>+10%</b></span> 士气打击</li>
+                        <li> <span class="effect-green"><b>-1</b></span> 全国叛乱度</li></ul>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>更愿意开启一边倒的战争。</li>
+                        <li>更愿意开启战争。</li></ul>
+                </div> </td>
+                <td>仅限农民共和国统治者</td>
+                <td><span class="effect-red"><b>+30</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Merchant Basileus</div><div style="font-weight: bold; font-size:larger;">商人巴西琉斯<span id="商人巴西琉斯"></span></div><div style="line-height: 1.2em; font-size:smaller;">这位统治者是一名商人巴西琉斯。他专注于使国家的预算保持正收支平衡，同时尽可能地获取利润。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>+10%</b></span> 贸易效率</li>
+                        <li> <span class="effect-green"><b>+10%</b></span> 商品产出修正</li></ul>
+                </div></td>
+                <td>
+                </td>
+                <td>仅限拜占庭文化组国家统治者，且完成狄奥多罗任务#加夫拉斯凯旋</td>
+                <td><span class="effect-red"><b>+15</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Orangist Stadtholder</div><div style="font-weight: bold; font-size:larger;">奥兰治派省督<span id="奥兰治派省督"></span></div><div style="line-height: 1.2em; font-size:smaller;">作为奥兰治派事业的政治首脑，我们的统治者将尽一切手段保障奥兰治派的权力，并降低议会派的影响。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>+0.5</b></span> 年度专制度</li>
+                        <li> <span class="effect-green"><b>-2</b></span> 全国叛乱度</li></ul>
+                </div></td>
+                <td>
+                </td>
+                <td>拥有「奥兰治派省督」政府改革的国家统治者作为将领赢得了<b>25</b>场战斗后可获得该特质</td>
+                <td><span class="effect-red"><b>+40</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Reaver</div><div style="font-weight: bold; font-size:larger;">掠夺者<span id="掠夺者"></span></div><div style="line-height: 1.2em; font-size:smaller;">一位寻求外国城市财宝的领袖。我们的统治者只希望通过掠夺诸敌国来获取黄金。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>+15%</b></span> 可用的战利品</li>
+                        <li><span class="effect-green"><b>+20%</b></span> 焚掠获得的点数</li></ul>
+                </div></td>
+                <td><div class="plainlist">
+                    <ul><li>更不愿意送出礼物。</li>
+                        <li>更愿意开启战争。</li></ul>
+                </div></td>
+                <td>
+                    <ul><li>  至少3军事技能</li>
+                        <li>下列条件满足其一：
+                            <ul><li>完成蒙兀儿斯坦任务#加强劫掠</li>
+                                <li>完成蒙古任务#围攻北京</li>
+                                <li>完成鞑靼任务#加强劫掠</li></ul></li></ul></td>
+                <td><span class="effect-red"><b>+2</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">The Last Knight</div><div style="font-weight: bold; font-size:larger;">最后的骑士<span id="最后的骑士"></span></div><div style="line-height: 1.2em; font-size:smaller;">马克西米利安一世或许是历史上最伟大的神圣罗马帝国皇帝之一。他的野心让他统一了奥地利的土地，发动了对法兰西的军事行动，夺取了匈牙利、波希米亚、西班牙和勃艮第的王位，并改变了欧洲的力量平衡，使之有利于奥地利。</div></div></div></td>
+                <td><div class="plainlist">
+                    <ul><li> <span class="effect-green"><b>+10%</b></span> 骑兵作战能力</li>
+                        <li> <span class="effect-green"><b>+50%</b></span> 陆战获得的陆军传统</li></ul>
+                </div></td>
+                <td>
+                </td>
+                <td>只有通过最后的骑士事件获得的马克西米利安（5/5/5）拥有该特质</td>
+                <td><span class="effect-red"><b>+60</b></span></td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Immortal</div><div style="font-weight: bold; font-size:larger;">永生者<span id="永生者"></span></div><div style="line-height: 1.2em; font-size:smaller;">这位统治者设法欺骗了死神，很可能获得了永生。虽然免疫了疾病和衰老，他们仍会死于暴力伤害。</div></div></div></td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>可通过转档器从CK2中获得或在自定义国家时选择</td>
+                <td><span class="effect-red"><b>+800</b></span></td>
+            </tr>
+            </tbody><tfoot></tfoot>
+            </table>
+        </div>
+    </div>
+<div class="container">
+    <div class="row text-center">
+        <h3>特质id代码</h3>
+        <h5>结合 add_trait 或 remove_trait 使用，适用于特质英文无法与特质ID对应时。<br>在输入时，可以不输入"personality"，<br>例如："add_trait fertile"或"remove_trait infertile"。</h5>
+    </div>
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>特质代码</th>
+            <th>特质名称</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td>just_personality</td><td>公正</td></tr>
+        <tr><td>righteous_personality</td><td>正义</td></tr>
+        <tr><td>tolerant_personality</td><td>宽容</td></tr>
+        <tr><td>kind_hearted_personality</td><td>心地善良</td></tr>
+        <tr><td>free_thinker_personality</td><td>天马行空</td></tr>
+        <tr><td>well_connected_personality</td><td>人脉通达</td></tr>
+        <tr><td>calm_personality</td><td>冷静</td></tr>
+        <tr><td>careful_personality</td><td>谨慎</td></tr>
+        <tr><td>secretive_personality</td><td>守口如瓶</td></tr>
+        <tr><td>intricate_web_weaver_personality</td><td>暗中策划者</td></tr>
+        <tr><td>fertile_personality</td><td>枝繁叶茂</td></tr>
+        <tr><td>well_advised_personality</td><td>兼听则信</td></tr>
+        <tr><td>benevolent_personality</td><td>宽厚仁爱</td></tr>
+        <tr><td>zealot_personality</td><td>狂热</td></tr>
+        <tr><td>pious_personality</td><td>虔诚</td></tr>
+        <tr><td>lawgiver_personality</td><td>立法者</td></tr>
+        <tr><td>midas_touched_personality</td><td>点石成金</td></tr>
+        <tr><td>incorruptible_personality</td><td>清正廉洁</td></tr>
+        <tr><td>architectural_visionary_personality</td><td>能工巧匠</td></tr>
+        <tr><td>scholar_personality</td><td>学者</td></tr>
+        <tr><td>entrepreneur_personality</td><td>实业家</td></tr>
+        <tr><td>industrious_personality</td><td>勤政</td></tr>
+        <tr><td>expansionist_personality</td><td>开疆扩土</td></tr>
+        <tr><td>charismatic_negotiator_personality</td><td>魅力非凡的说客</td></tr>
+        <tr><td>silver_tongue_personality</td><td>能说会道</td></tr>
+        <tr><td>conqueror_personality</td><td>征服者</td></tr>
+        <tr><td>tactical_genius_personality</td><td>战术天才</td></tr>
+        <tr><td>bold_fighter_personality</td><td>勇士</td></tr>
+        <tr><td>strict_personality</td><td>治军严明</td></tr>
+        <tr><td>inspiring_leader_personality</td><td>鼓舞人心</td></tr>
+        <tr><td>martial_educator_personality</td><td>军事教育家</td></tr>
+        <tr><td>navigator_personality</td><td>航海家</td></tr>
+        <tr><td>fierce_negotiator_personality</td><td>唇枪舌剑</td></tr>
+        <tr><td>Humaney</td><td>仁德</td></tr>
+        <tr><td>legendary_pirate_personality</td><td>传奇海盗</td></tr>
+        <tr><td>reformist_personality</td><td>改革家</td></tr>
+        <tr><td>legendary_conqueror_personality</td><td>传奇征服者</td></tr>
+        <tr><td>great_engineer_personality</td><td>伟大工程师</td></tr>
+        <tr><td>patron_of_arts_personality</td><td>赞助艺术</td></tr>
+        <tr><td>fu_papal_puppetmaster_personality</td><td>傀儡教宗</td></tr>
+        <tr><td>iron_crowned_personality</td><td>加冕铁王冠</td></tr>
+        <tr><td>peasant_revolt_leader_personality</td><td>小民的庇护者</td></tr>
+        </tbody>
+    </table>
+</div>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">&copy; 网友ncnmb全网唯一指定网站<br>我都不知道这玩意偷了能干嘛<br>基于bootstrap5实现</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="https://github.com/qsxes"><i class="bi bi-github"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://space.bilibili.com/3546972220819463?spm_id_from=333.1007.0.0"><i class="bi bi-tv-fill"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://tieba.baidu.com/home/main?id=tb.1.5cdda606.whVGonaMXrmknIO1TGdfHA&fr=personalize_page"><i class="bi bi-clipboard"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/@ncnmb"><i class="bi bi-youtube"></i></a></li>
+    </ul>
+</footer>
+<script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // 初始化页面所有带 data-bs-toggle="popover" 的元素
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+</script>
+</body>
+<script src="pjJS/all.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchBtn = document.getElementById('search');
+        const keywordInput = document.getElementById('keyWordInput');
+
+        searchBtn.addEventListener('click', function() {
+            const keyword = keywordInput.value.trim().toLowerCase();
+
+            // 获取表格主体中的所有数据行（排除表头行）
+            const rows = document.querySelectorAll('tbody tr');
+
+            if (keyword === '') {
+                // 如果输入为空，恢复所有行的显示
+                rows.forEach(row => {
+                    row.style.display = '';
+                });
+                return;
+            }
+
+            // 遍历每一行，判断是否包含关键字
+            rows.forEach(row => {
+                let matched = false;
+                // 获取该行中所有单元格（td）
+                const cells = row.querySelectorAll('td');
+                for (let cell of cells) {
+                    const cellText = cell.textContent.trim().toLowerCase();
+                    if (cellText.includes(keyword)) {
+                        matched = true;
+                        break;
+                    }
+                }
+                // 根据匹配结果显示或隐藏行
+                row.style.display = matched ? '' : 'none';
+            });
+        });
+    });
+</script>
+</html>

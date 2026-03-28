@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>君主负面特质</title>
+    <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pjCSS/all.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">ncnmb的欧陆风云4日志</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="bioLinks">
+                        <i class="bi bi-link"></i>
+                        ncnmb的社交媒体
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://space.bilibili.com/3546972220819463?spm_id_from=333.1007.0.0"><i class="bi bi-tv-fill"></i>bilibili</a></li>
+                        <li><a class="dropdown-item" href="https://tieba.baidu.com/home/main?id=tb.1.5cdda606.whVGonaMXrmknIO1TGdfHA&fr=personalize_page"><i class="bi bi-clipboard"></i>贴吧</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/qsxes"><i class="bi bi-github"></i>github</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/@ncnmb"><i class="bi bi-youtube"></i>youtube</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">欢迎各位追踪我的各个平台账号:<br><br>->b站和YouTube有长视频版本<br>->贴吧和本网站提供文字版本<br>->github可下载离线网页备份</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-link-45deg"></i>
+                        友情链接
+                    </a>
+                    <ul class="dropdown-menu friendLinks">
+                        <li><a class="dropdown-item" href="https://tieba.baidu.com/f?kw=%E6%AC%A7%E9%99%86%E9%A3%8E%E4%BA%914&fr=personalize_page"><i class="bi bi-link-45deg"></i>欧陆风云4贴吧</a></li>
+                        <li><a class="dropdown-item" href="https://eu4cn.com"><i class="bi bi-link-45deg"></i>欧陆风云4中文维基</a></li>
+                        <li><a class="dropdown-item" href="https://anbennar.fandom.com/wiki/Anbennar_Wiki"><i class="bi bi-link-45deg"></i>安本纳尔官方维基</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-tools"></i>
+                        工具页面
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="consoleCode.html"><i class="bi bi-code-slash"></i>控制台代码集合</a></li>
+                        <li><a class="dropdown-item" href="usefulEvent.html"><i class="bi bi-code-slash"></i>有用控制台事件集合</a></li>
+                        <li><a class="dropdown-item" href="goodTrait.html"><i class="bi bi-code-slash"></i>君主特质</a></li>
+                        <li><a class="dropdown-item" href="picture.html"><i class="bi bi-file-zip"></i>原版加载图片资源</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" onsubmit="return false">
+                <input class="form-control me-2" type="search" placeholder="请输入关键字" aria-label="Search" id="keyWordInput" data-bs-toggle="popover"
+                       data-bs-trigger="focus"
+                       data-bs-title="输入框为空时,点击“搜索”复原"
+                       data-bs-content=""
+                       tabindex="0">
+                <button class="btn btn-outline-success" type="submit" id="search">搜索</button>
+            </form>
+        </div>
+    </div>
+</nav>
+    <div class="container" id="consoleCode">
+        <div class="container">
+            <table class="mildtable sortable jquery-tablesorter table table-striped table-hover" style="width:100%">
+                <thead>
+                <th style="width:350px" class="headerSort" tabindex="0" role="columnheader button" title="升序排列">特质
+                </th>
+                <th class="unsortable" style="width:250px">效果
+                </th>
+                <th class="unsortable">AI统治者将会
+                </th>
+                <th class="unsortable">前提条件与权重修正
+                </th>
+                <th class="headerSort" tabindex="0" role="columnheader button" title="升序排列">自定义国家
+                </th>
+                </thead><tbody>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Babbling Buffoon</div><div style="font-weight: bold; font-size:larger;">喋喋不休的小丑<span id="喋喋不休的小丑"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是个喋喋不休的小丑。尽管他在外交问题上与邻国交谈甚欢，却并不能证明他确有这方面的才干。任何人都很难准确了解我们的真实立场，很多时候，我们统治者太过无能，对我们的谈判有害无利。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>–1</b></span> 外交声誉
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>会随机地羞辱你。</li>
+                        <li>提前透露他们的进攻计划。</li></ul>
+                </div>
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>No 魅力非凡的说客</li>
+                        <li>No 巧舌如簧</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Embezzler</div><div style="font-weight: bold; font-size:larger;">贪污腐败<span id="贪污腐败"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是个腐败分子。他唯一感兴趣的事情就是把国库里的钱放进他私人的腰包。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>+0.05</b></span> 年度腐败度
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>将他们的省份卖出以支付他们的贷款。</li>
+                        <li>更频繁地使他们的货币贬值。</li></ul>
+                </div>
+                </td>
+                <td>No 清正廉洁
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Infertile</div><div style="font-weight: bold; font-size:larger;">枯枝败叶<span id="枯枝败叶"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者在某方面显得力不从心。由于某种不可控的原因，相较其他人，我们的君主似乎很难有一个继承人。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>–25%</b></span> 新继承人的几率
+                </td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更不可能结婚。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>–20 royal marriage acceptance</li></ul>
+                    </div>
+                </div>
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>No 枝繁叶茂</li>
+                        <li>采用继承人机制的君主制国家</li>
+                        <li>No 奥斯曼帝国政府</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1x</b></span> 高于 40 岁</li>
+                                <li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Indulgent</div><div style="font-weight: bold; font-size:larger;">放纵不羁<span id="放纵不羁"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者放纵不羁。我们的统治者一直在寻找能使自己摆脱无趣尘世的慰藉，因此日夜在诸如酒精之类物品的刺激下声色犬马。有一位纸醉金迷的统治者是国之不幸。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>–10%</b></span> 贸易效率
+                </td>
+                <td>愿意贷款（甚至是从人类玩家手中）。
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>No 实业家</li>
+                        <li>No 虔诚无比</li>
+                        <li>No 狂热</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Sinner</div><div style="font-weight: bold; font-size:larger;">罪人<span id="罪人"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者的罪恶路人皆知。他领导国家时所体现出的个人缺点使宗教界站在了我们的对立面。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>–2</b></span> 正统信仰容忍
+                </td>
+                <td>喜欢焚掠和劫掠。
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>对其它宗教抱有更少敌意。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>0.8x declare wars (other religions)</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td>是 基督徒或穆斯林
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Greedy</div><div style="font-weight: bold; font-size:larger;">贪得无厌<span id="贪得无厌"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者欲壑难填。国家财政收入在我们统治者强硬却短视的政策下不断增长。他根本不会停下追求收入的脚步。这将彻底摧毁各种资源的长期增长，那些鼠目寸光的行为最终将导致税收的下降。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>–10%</b></span> 全国税收修正
+                </td>
+                <td>在和平条约中要求金币。
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更少送出礼物。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>−100 gift chance</li></ul>
+                        </div>
+                    </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更少可能加入贸易联盟。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>−10 trade league acceptance</li></ul>
+                        </div>
+                    </div>
+                    <p>开战时有特定针对的目标。
+                    </p>
+                </td>
+                <td>No 点石成金者
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Cruel</div><div style="font-weight: bold; font-size:larger;">残暴<span id="残暴"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者残暴无道。他专断残忍的传闻让我们的许多国民感到不安。这本身可能不足以激起叛乱，但这让任何危机都可能冲破公众的底线，因为人们总是不缺作乱的理由。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>+2</b></span> 全国叛乱度
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>毫不犹豫地背弃他们的盟友。</li>
+                        <li>希望给予被压迫者更少的自治度。</li>
+                        <li>喜欢焚掠和劫掠。</li></ul>
+                </div>
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>No 公正</li>
+                        <li>No 热心</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Naive Enthusiast</div><div style="font-weight: bold; font-size:larger;">冲动幼稚<span id="冲动幼稚"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者幼稚且容易头脑发热。他总是盲目而不假思索地处理事务，而且低估其所带来的恶果，这让我们的邻国更难以谅解他怠慢和冒犯的行为。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>–20%</b></span> 改善关系
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>不在意侵略扩张的影响。</li>
+                        <li>更愿意选择与自己体量相当的对手。</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更经常送出礼物。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>+90 gift chance</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>No 谨慎</li>
+                        <li>No 巧舌如簧</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-green"><b>1x</b></span> 天马行空</li>
+                                <li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Craven</div><div style="font-weight: bold; font-size:larger;">怯懦<span id="怯懦"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者是个懦夫。他非常害怕殒命沙场，总是尽量远离战火。我们的部队很容易发现他们只能靠自己。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>–5%</b></span> 陆军士气
+                </td>
+                <td><div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>高估敌人力量。
+                    <div class="mw-collapsible-content" style="display: none;">
+                        <ul><li>1.25x enemy strength</li></ul>
+                    </div>
+                </div>
+                </td>
+                <td>No 激励者
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li>
+                                <li><span class="effect-red"><b>0.5x</b></span> （统治者/继承人）<b>不是</b> 将军</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Loose Lips</div><div style="font-weight: bold; font-size:larger;">口无遮拦<span id="口无遮拦"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者容易泄露信息，往往轻信他人，易受愚弄。我们的统治者对我们的反间谍活动十分不利，实属不幸。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>–20%</b></span> 外国间谍察觉
+                </td>
+                <td>提前透露他们的进攻计划。
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>No 暗中策划者</li>
+                        <li>No 守口如瓶</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Obsessive Perfectionist</div><div style="font-weight: bold; font-size:larger;">吹毛求疵<span id="吹毛求疵"></span></div><div style="line-height: 1.2em; font-size:smaller;">这位统治者有完美主义强迫症。他对细枝末节的兴趣大过他处理此事的才能。他在我们建设国内基础设施时举措烦扰，这样恐怕弊大于利。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>+10%</b></span> 建设花费
+                </td>
+                <td>尝试避免丑陋的地图边界形状。
+                </td>
+                <td>No 巧匠
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Malevolent</div><div style="font-weight: bold; font-size:larger;">心狠手辣<span id="心狠手辣"></span></div><div style="line-height: 1.2em; font-size:smaller;">这个统治者蛇蝎心肠。你的统治者的行为常被视为动机不良。因此，任何原本臣服于我们的国家都很容易被我们惹恼，我们的一切行动都使他们感到害怕。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>+5%</b></span> 附属国独立倾向
+                </td>
+                <td>毫不犹豫地背弃他们的盟友。
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span>更愿意使用发出警告的外交行动。
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li>+50 send warning desire</li></ul>
+                        </div>
+                    </div>
+                    <div class="plainlist">
+                        <ul><li>提前透露他们的进攻计划。</li>
+                            <li>更经常威胁开战。</li></ul>
+                    </div>
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>No 仁慈</li>
+                        <li>No 热心</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.5x</b></span> 拥有任何其它负面特质</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="display:flex; align-items:center;"><div style="margin-left:5px;"><div style="font-weight: bold; font-size:smaller;">Petty</div><div style="font-weight: bold; font-size:larger;">偏狭<span id="偏狭"></span></div><div style="line-height: 1.2em; font-size:smaller;">这位统治者心胸狭隘。即使是最微不足道的小事也会唤起他的怒气，无论多小的财产都会引起他的妒忌。</div></div></div>
+                </td>
+                <td> <span class="effect-red"><b>−0.05</b></span> 天命值增长修正
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>毫不犹豫地背弃他们的盟友。</li>
+                        <li>会随机地羞辱你。</li>
+                        <li>喜欢焚掠和劫掠。</li></ul>
+                </div>
+                </td>
+                <td><div class="plainlist">
+                    <ul><li>是 DLC 天命已激活</li>
+                        <li>是 天朝</li>
+                        <li>No 仁德</li></ul>
+                </div>
+                    <div class="mw-collapsible mw-collapsed mw-made-collapsible"><span class="mw-collapsible-toggle mw-collapsible-toggle-default mw-collapsible-toggle-collapsed" role="button" tabindex="0" aria-expanded="false"><a class="mw-collapsible-text"></a></span><b>修正</b>
+                        <div class="mw-collapsible-content" style="display: none;">
+                            <ul><li><span class="effect-red"><b>0.33x</b></span> 拥有任何其它负面特质</li>
+                                <li><span class="effect-green"><b>0.50x</b></span> 少于 贤能值</li>
+                                <li><span class="effect-red"><b>0.33x</b></span> 至少 贤能值</li></ul>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="effect-green"><b>−2</b></span>
+                </td>
+            </tr>
+            </tbody><tfoot></tfoot>
+            </table>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <h3>特质id代码</h3>
+                <h5>结合 add_trait 或 remove_trait 使用，适用于特质英文无法与特质ID对应时。<br>在输入时，可以不输入"personality"，<br>例如："add_trait fertile"或"remove_trait infertile"。</h5>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>特质代码</th>
+                    <th>特质名称</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>babbling_buffoon_personality</td>
+                    <td>喋喋不休的小丑</td>
+                </tr>
+                <tr>
+                    <td>embezzler_personality</td>
+                    <td>贪污腐败</td>
+                </tr>
+                <tr>
+                    <td>infertile_personality</td>
+                    <td>枯枝败叶</td>
+                </tr>
+                <tr>
+                    <td>drunkard_personality</td>
+                    <td>放纵不羁</td>
+                </tr>
+                <tr>
+                    <td>sinner_personality</td>
+                    <td>罪人</td>
+                </tr>
+                <tr>
+                    <td>greedy_personality</td>
+                    <td>贪得无厌</td>
+                </tr>
+                <tr>
+                    <td>cruel_personality</td>
+                    <td>残暴</td>
+                </tr>
+                <tr>
+                    <td>naive_personality</td>
+                    <td>冲动幼稚</td>
+                </tr>
+                <tr>
+                    <td>craven_personality</td>
+                    <td>怯懦</td>
+                </tr>
+                <tr>
+                    <td>loose_lips_personality</td>
+                    <td>口无遮拦</td>
+                </tr>
+                <tr>
+                    <td>obsessive_perfectionist_personality</td>
+                    <td>吹毛求疵</td>
+                </tr>
+                <tr>
+                    <td>malevolent_personality</td>
+                    <td>心狠手辣</td>
+                </tr>
+                <tr>
+                    <td>immortal_personality</td>
+                    <td>永生者</td>
+                </tr>
+                <tr>
+                    <td>petty_personality</td>
+                    <td>狭隘</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">&copy; 网友ncnmb全网唯一指定网站<br>我都不知道这玩意偷了能干嘛<br>基于bootstrap5实现</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="https://github.com/qsxes"><i class="bi bi-github"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://space.bilibili.com/3546972220819463?spm_id_from=333.1007.0.0"><i class="bi bi-tv-fill"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://tieba.baidu.com/home/main?id=tb.1.5cdda606.whVGonaMXrmknIO1TGdfHA&fr=personalize_page"><i class="bi bi-clipboard"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/@ncnmb"><i class="bi bi-youtube"></i></a></li>
+    </ul>
+</footer>
+<script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // 初始化页面所有带 data-bs-toggle="popover" 的元素
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+</script>
+</body>
+<script src="pjJS/all.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchBtn = document.getElementById('search');
+        const keywordInput = document.getElementById('keyWordInput');
+
+        searchBtn.addEventListener('click', function() {
+            const keyword = keywordInput.value.trim().toLowerCase();
+
+            // 获取表格主体中的所有数据行（排除表头行）
+            const rows = document.querySelectorAll('tbody tr');
+
+            if (keyword === '') {
+                // 如果输入为空，恢复所有行的显示
+                rows.forEach(row => {
+                    row.style.display = '';
+                });
+                return;
+            }
+
+            // 遍历每一行，判断是否包含关键字
+            rows.forEach(row => {
+                let matched = false;
+                // 获取该行中所有单元格（td）
+                const cells = row.querySelectorAll('td');
+                for (let cell of cells) {
+                    const cellText = cell.textContent.trim().toLowerCase();
+                    if (cellText.includes(keyword)) {
+                        matched = true;
+                        break;
+                    }
+                }
+                // 根据匹配结果显示或隐藏行
+                row.style.display = matched ? '' : 'none';
+            });
+        });
+    });
+</script>
+</html>

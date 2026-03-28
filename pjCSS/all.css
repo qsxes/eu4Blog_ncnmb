@@ -1,0 +1,315 @@
+.bi-sina-weibo{
+    color:red;
+}
+.bi-tv-fill{
+    color: hotpink;
+}
+.bi-clipboard{
+    color: #0d6efd;
+}
+.bi-youtube{
+    color: red;
+}
+.dropdown-menu .bi{
+    padding-right: 10px;
+}
+.nav-link.dropdown-toggle{
+    color: #0d6efd;
+}
+.nav-link.dropdown-toggle:hover{
+    color: darkblue;
+}
+.friendLinks li>a{
+    color: #0d6efd;
+}
+.friendLinks li>a:hover{
+    color: darkblue;
+}
+.navbar-brand {
+    display: inline-block;
+    animation: smoothPulse 2s ease-in-out infinite;
+}
+
+@keyframes rgbSwitch {
+    0% {
+        color: rgb(255, 0, 0);
+        transform: scale(0.8) translateY(10px);
+
+    }     /* 红 */
+    50% {
+        color: rgb(0, 255, 0);
+        transform: scale(1.0) translateY(-10px);
+    }    /* 绿 */
+    100% {
+        color: rgb(0, 0, 255);
+        transform: scale(0.8) translateY(10px);
+    }    /* 蓝 */
+}
+.endBlog{
+    animation: smoothPulse,rgbSwitch 2s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes smoothPulse {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1.0); }
+    100% { transform: scale(0.8); }
+}
+@keyframes word {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0.5px;
+        left: -0.5px;
+    }
+    50%{
+        top: -0.5px;
+        left: 0.5px;
+    }
+    75%{
+        top: -0.5px;
+        left: -0.5px;
+    }
+    100%{
+        top: 0.5px;
+        left: 0.5px;
+    }
+}
+.titleWord{
+    position: relative;
+    display: inline-block;
+    animation: word 0.5s ease-in-out infinite;
+    color: #F6B721;
+}
+
+/*轮播图背景颜色*/
+.carousel-item{
+    background-color: #293238;
+}
+#headCard{
+    background-color: #293238;
+    color: gold;
+    text-align: center;
+}
+
+#targetLinks{
+    position: fixed;
+    border-radius: 2px;
+    top: 25%;
+    left: 0%;
+    font-size: calc(14px + 0.5vw); /* 基础14px，视口越宽字体越大 */
+    padding: 0.5em 1em;            /* 让内边距随字体缩放 */
+}
+#carouselExampleInterval{
+    margin-bottom: 15px;
+}
+.veryHard{
+    background-color: #f0e8d8;
+}
+.modelBox{
+    padding: 10px;
+}
+.accordion-body:hover {
+    background-color: lavender;
+}
+.selectTagBox{
+    background-color: lavender;
+}
+.blank{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    flex: 1;
+}
+.aside-wrapper {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+}
+.aside-wrapper .sticky-top.row {
+    flex: 1;                 /* 撑满剩余高度 */
+    width: 100%;             /* 防止溢出 */
+    margin: 0;               /* 抵消 Bootstrap 的负外边距 */
+}
+.sticky-top.row{
+    height: 500px;
+}
+.col-md-6.col-sm-12 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1; /* 确保放大时覆盖其他元素 */
+}
+
+.col-md-6.col-sm-12:hover {
+    transform: scale(1.05); /* 放大 5%，可根据需要调整 */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+    z-index: 2;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* 确保导航栏在页面其他元素之上 */
+}
+
+/* 可选：吸顶后添加阴影 */
+.sticky-nav.stuck {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder {
+    font-size: 12px;   /* 设置你想要的字体大小 */
+}
+
+.bodyText .card{
+    border: 0px;
+}
+.bodyText{
+    margin-top: 80px;
+}
+span>img{
+    height: 1rem;
+    width: 1.5rem;
+}
+.blackSheep_text{
+    color: #37C8AB;
+}
+.ardabil_text{
+    color: #008000;
+}
+.whiteSheep_text{
+    color: #203A89;
+}
+.Timurids_text{
+    color: #CA0000;
+}
+.Ajam_text{
+    color: #2C4A8B;
+}
+.Shirvan_text{
+    color: #EFE100;
+}
+.Mazandaran_text{
+    color: #DFD596;
+}
+.Persia_text{
+    color: #F6B721;
+    animation: word 0.5s ease-in-out infinite;
+}
+@keyframes shake {
+    0%   { transform: translateY(1px); }
+    25%  { transform: translateX(1px); }
+    75%  { transform: translateX(-1px); }
+    100% { transform: translateY(-1px); }
+}
+@keyframes bigShake {
+    0%   { transform: translate(0,0) rotate(0deg) scale(1); }
+    10%  { transform: translate(4px, -3px) rotate(3deg) scale(1.08); }
+    20%  { transform: translate(-5px, 2px) rotate(-4deg) scale(0.94); }
+    30%  { transform: translate(6px, -1px) rotate(4deg) scale(1.06); }
+    40%  { transform: translate(-4px, -3px) rotate(-3deg) scale(0.96); }
+    50%  { transform: translate(5px, 3px) rotate(5deg) scale(1.07); }
+    60%  { transform: translate(-6px, 2px) rotate(-5deg) scale(0.93); }
+    70%  { transform: translate(3px, -4px) rotate(3deg) scale(1.04); }
+    80%  { transform: translate(-3px, 4px) rotate(-4deg) scale(0.97); }
+    90%  { transform: translate(4px, -2px) rotate(2deg) scale(1.02); }
+    100% { transform: translate(0,0) rotate(0deg) scale(1); }
+}
+.shakeWord{
+    animation: shake 0.2s infinite;
+    color: red;
+    display: inline-block;
+}
+.shake{
+    display: inline-block;
+    animation: shake 0.5s ease-in-out infinite;
+}
+.text_shadow{
+    text-shadow: 5px 5px 5px #F6B721;
+}
+dl img{
+    height: 24px;
+    width: 24px;
+}
+.gridBox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: -1px;
+
+}
+.gridBox>*{
+    padding-left: 1rem;
+    border: 1px dashed black;
+}
+dl{
+    margin-bottom: -1px;
+}
+.redBack{
+    background-color: red;
+    padding: 5px;
+    border-radius: 10px;
+}
+.twoImg{
+    border: 0px solid black;
+    background-color: lightgray;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.twoImg>div{
+    padding: 0.5rem;
+}
+
+/*解决Cumulative Layout Shift (CLS)问题，帮助浏览器预留图片位置*/
+img {
+    width: 100%;
+    height: auto;
+}
+.darkblue_text{
+    color: darkblue;
+}
+.dived{
+    margin: 1rem;
+}
+.lightBlue_text{
+    color: lightblue;
+}
+.red_text{
+    color: red;
+}
+.yellow_text{
+    color: yellow;
+}
+.blogLink:hover{
+    background-color: #008000;
+}
+.back_lightGary{
+    background-color: #6600CC;
+}
+.mediumpurple_text{
+    color: mediumpurple;
+}
+.accordion-body .goatImg{
+    display: flex;
+    justify-content: center;
+}
+.goatImg img{
+    width: 4rem;
+}
+#consoleCode tr>td:nth-child(1){
+    text-align: center;
+    vertical-align: middle;
+}
+#consoleCode tr>th{
+    text-align: center;
+    vertical-align: middle;
+}
+.aside-wrapper {
+    min-width: 0;
+}
+aside{
+    font-size: 0.8rem;
+}
+#pictureWeb i{
+    font-size: 4rem;
+}

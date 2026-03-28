@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ncnmb的欧陆风云4日志</title>
+    <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pjCSS/all.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">ncnmb的欧陆风云4日志</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="bioLinks">
+                        <i class="bi bi-link"></i>
+                        ncnmb的社交媒体
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://space.bilibili.com/3546972220819463?spm_id_from=333.1007.0.0"><i class="bi bi-tv-fill"></i>bilibili</a></li>
+                        <li><a class="dropdown-item" href="https://tieba.baidu.com/home/main?id=tb.1.5cdda606.whVGonaMXrmknIO1TGdfHA&fr=personalize_page"><i class="bi bi-clipboard"></i>贴吧</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/qsxes"><i class="bi bi-github"></i>github</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/@ncnmb"><i class="bi bi-youtube"></i>youtube</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">欢迎各位追踪我的各个平台账号:<br><br>->b站和YouTube有长视频版本<br>->贴吧和本网站提供文字版本<br>->github可下载离线网页备份</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-link-45deg"></i>
+                        友情链接
+                    </a>
+                    <ul class="dropdown-menu friendLinks">
+                        <li><a class="dropdown-item" href="https://tieba.baidu.com/f?kw=%E6%AC%A7%E9%99%86%E9%A3%8E%E4%BA%914&fr=personalize_page"><i class="bi bi-link-45deg"></i>欧陆风云4贴吧</a></li>
+                        <li><a class="dropdown-item" href="https://eu4cn.com"><i class="bi bi-link-45deg"></i>欧陆风云4中文维基</a></li>
+                        <li><a class="dropdown-item" href="https://anbennar.fandom.com/wiki/Anbennar_Wiki"><i class="bi bi-link-45deg"></i>安本纳尔官方维基</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-tools"></i>
+                        工具页面
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="consoleCode.html"><i class="bi bi-code-slash"></i>控制台代码集合</a></li>
+                        <li><a class="dropdown-item" href="usefulEvent.html"><i class="bi bi-code-slash"></i>有用控制台事件集合</a></li>
+                        <li><a class="dropdown-item" href="badTrait.html"><i class="bi bi-code-slash"></i>负面君主特质</a></li>
+                        <li><a class="dropdown-item" href="goodTrait.html"><i class="bi bi-code-slash"></i>正面君主特质</a></li>
+                        <li><a class="dropdown-item" href="picture.html"><i class="bi bi-file-zip"></i>原版加载图片资源</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" onsubmit="return false">
+                <input class="form-control me-2" type="search" placeholder="请输入(次大陆|国家名|成就名)" aria-label="Search" id="keyWordInput" data-bs-toggle="popover"
+                       data-bs-trigger="focus"
+                       data-bs-title="📝 输入框为空时,点击“搜索”复原
+                       “成就与推荐国家”条目!!!"
+                       data-bs-content=""
+                       tabindex="0">
+                <button class="btn btn-outline-success" type="submit" id="search">搜索</button>
+            </form>
+        </div>
+    </div>
+</nav>
+    <div class="container">
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/banner_min/孝庄.jpg" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/卡尔十二.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/努尔哈赤.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/伊莎贝拉.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/儒略二世.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/克伦威尔.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/克里斯蒂安四世.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/卡齐米日四世.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/古烈提.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/叶卡捷琳娜.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/彼得一世.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/武禄.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/织田信长.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/腓力二世.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/腓特烈.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/蒙特祖玛.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/西尔科.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/阿克巴.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/阿巴斯.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="img/banner_min/马加什.jpg" loading="lazy" class="d-block w-50 mx-auto" alt="...">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="row newPaper">
+            <h2 class="text-center">最新战报</h2>
+            <div class="col-md-6 col-sm-12 ">
+                <div class="card position-relative h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">阿尔达比勒</h5>
+                        <p class="card-text">
+                            萨法维教团原本只是向土库曼人传教的一支什叶苏菲派教团，但这支阿尔达比勒的地方教团将会在未来征服波斯，将什叶信仰重新在波斯复兴。
+                        </p>
+                        <hr>
+                        <p class="card-text">我即是活着的希德尔（Khidr）和麦尔彦之子耶稣。我即是当代的伊斯坎达尔（亚历山大）</p>
+                        <p class="card-text text-end">——伊斯玛仪一世</p>
+                        <p class="card-text"><small class="text-body-secondary">2026/3/19</small></p>
+                    </div>
+                    <img src="img/tag_flags/Ardabil.png" class="card-img-bottom" alt="阿尔达比勒">
+                    <a href="ardabil.html" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 ">
+                <div class="card position-relative h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">哈桑凯伊夫</h5>
+                        <p class="card-text">
+                            作为古老王朝的最后遗嗣，孤立民族为数不多的独立政权，哈桑凯伊夫在黎凡特的十字路口摇摇欲坠。
+                        </p>
+                        <hr>
+                        <p class="card-text">
+                            在我死后，你们将看到这些穆斯林因不团结而分崩离析，你们将看到欧洲人变得强大。现在最好的做法，就是继续战斗，直到我们将他们赶出海岸（巴勒斯坦），或者战死沙场。
+                        </p>
+                        <p class="card-text text-end">——萨拉丁.阿尤布</p>
+                        <p class="card-text"><small class="text-body-secondary">2026/3/19</small></p>
+                        <p class="red_text">施工中！尚未完成</p>
+                    </div>
+                    <img src="img/tag_flags/Hisn_Kayfa.png" class="card-img-bottom" alt="哈桑凯伊夫">
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row papers">
+            <section class="col-lg-8 col-sm-12 p-5">
+                <div class="row">
+                    <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                        成就与推荐国家
+                    </h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#persia" aria-expanded="true" aria-controls="Persia">
+                                    波斯
+                                </button>
+                            </h2>
+                            <div id="persia" class="accordion-collapse collapse">
+                                <a href="ardabil.html" class="d-block text-decoration-none text-reset p-0" id="阿尔达比勒">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>阿尔达比勒</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Ardabil.png" loading="lazy" alt="阿尔达比勒" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>阿尔达比勒</strong><br>
+                                                <code>.accordion-body</code>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/Shahanshah.jpg" loading="lazy" alt="阿尔达比勒" class="img-fluid">
+                                                </div>
+                                                <h4><span>沙汗沙</span></h4>
+                                                <strong class="veryHard modelBox">难度:<span class="model">极难</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#levant" aria-expanded="false" aria-controls="Levant">
+                                    黎凡特
+                                </button>
+                            </h2>
+                            <div id="levant" class="accordion-collapse collapse" >
+                                <a href="#" class="d-block text-decoration-none text-reset p-0" id="哈桑凯伊夫">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>哈桑凯伊夫</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Hisn_Kayfa.png" loading="lazy" alt="萨拉丁的遗产" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>哈桑凯伊夫</strong><br>
+                                                <code>.accordion-body</code>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/Achievement_the_eagle_flies_alone.png" loading="lazy" alt="雄鹰独飞" srcset="" class="img-fluid">
+                                                    <img src="img/goat_imgs/Saladins_Legacy.png" loading="lazy" alt="萨拉丁的遗产" class="img-fluid">
+                                                </div>
+                                                <h4><span class="h6">雄鹰独飞|萨拉丁的遗产</span></h4>
+                                                <strong class="veryHard modelBox">难度:<span class="model">极难</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#central_america" aria-expanded="false" aria-controls="central_america">
+                                    中美洲
+                                </button>
+                            </h2>
+                            <div id="central_america" class="accordion-collapse collapse" >
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#north_america" aria-expanded="false" aria-controls="central_america">
+                                    北美洲
+                                </button>
+                            </h2>
+                            <div id="north_america" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#andes" aria-expanded="false" aria-controls="central_america">
+                                    安第斯
+                                </button>
+                            </h2>
+                            <div id="andes" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amazon" aria-expanded="false" aria-controls="central_america">
+                                    亚马逊
+                                </button>
+                            </h2>
+                            <div id="amazon" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#south_africa" aria-expanded="false" aria-controls="central_america">
+                                    南非
+                                </button>
+                            </h2>
+                            <div id="south_africa" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#north_africa" aria-expanded="false" aria-controls="central_america">
+                                    北非
+                                </button>
+                            </h2>
+                            <div id="north_africa" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#far_east" aria-expanded="false" aria-controls="central_america">
+                                    远东
+                                </button>
+                            </h2>
+                            <div id="far_east" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tatar" aria-expanded="false" aria-controls="central_america">
+                                    鞑靼
+                                </button>
+                            </h2>
+                            <div id="tatar" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#east_europe" aria-expanded="false" aria-controls="central_america">
+                                    东欧
+                                </button>
+                            </h2>
+                            <div id="east_europe" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#west_europe" aria-expanded="false" aria-controls="central_america">
+                                    西欧
+                                </button>
+                            </h2>
+                            <div id="west_europe" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#china" aria-expanded="false" aria-controls="central_america">
+                                    中国
+                                </button>
+                            </h2>
+                            <div id="china" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" alt="未知" loading="lazy" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#oceania" aria-expanded="false" aria-controls="central_america">
+                                    大洋洲
+                                </button>
+                            </h2>
+                            <div id="oceania" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#east_india" aria-expanded="false" aria-controls="central_america">
+                                    东印度
+                                </button>
+                            </h2>
+                            <div id="east_india" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" alt="未知" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#india" aria-expanded="false" aria-controls="central_america">
+                                    印度
+                                </button>
+                            </h2>
+                            <div id="india" class="accordion-collapse collapse">
+                                <a href="#" class="d-block text-decoration-none text-reset p-0">
+                                    <div class="accordion-body">
+                                        <div class="row align-items-center">
+                                            <h4><span>施工中</span></h4>
+                                            <div class="col-md-3 text-center">
+                                                <div class="tagImg">
+                                                    <img src="img/tag_flags/Synthetics.png" alt="未知" loading="lazy" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <strong>正在施工中！</strong><br>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <div class="goatImg">
+                                                    <img src="img/goat_imgs/24px-Separatist_rebels.png" loading="lazy" alt="未知" class="img-fluid">
+                                                </div>
+                                                <strong class="modelBox">难度:<span class="model">施工中</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside class="col-lg-4 d-none d-md-block aside-wrapper">
+                <div class="sticky-top row text-center">
+                    <h4>你知道吗?</h4>
+                    <div class="row">
+                        <p>
+                            只需要将文化切换至东斯拉夫文化组，即可给予贵族特权<br><span class="red_text">波雅尔—采邑骑兵</span><br><br>
+                            提供<span><img src="img/icon_imgs/36px-Ab_cavalry_armies.png">25%骑兵比例</span>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <p>
+                            <span class="red_text">
+                                <img src="img/icon_imgs/36px-Tolerance_heretic.png">
+                                <img src="img/icon_imgs/42px-Tolerance_heathen.png">
+                                异端异教
+                            </span>
+                            省份<br>带来的
+                            <span class="Shirvan_text">
+                                <img src="img/icon_imgs/28px-Religious_unity.png">
+                                宗教统一
+                            </span>
+                            惩罚<br>会随着
+                            <span class="ardabil_text">
+                                异端异教容忍
+                            </span>
+                            的增加随之减少<br>当
+                            <span class="ardabil_text">
+                                异端异教容忍
+                            </span>
+                            达到3时<br>宗教统一惩罚降为0
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="row text-center">
+                        <span class="ardabil_text">
+                                <img src="img/tag_flags/Mughals.png">
+                                莫卧儿只能融合旧大陆的文化，包括罗马、帕提亚等失落文化组
+                        </span>
+                        <br>
+                        <span class="red_text">
+                                <img src="img/icon_imgs/Discipline%20(1).png">
+                                奖励5%训练度
+                        </span>
+                        <br>可以在开局使用自定义国家获得一块失落文化组的地块，这样成立
+                        <span class="ardabil_text">
+                                <img src="img/tag_flags/Mughals.png">
+                                莫卧儿时就可以白拿5训
+                        </span>
+                        <br>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">&copy; 网友ncnmb全网唯一指定网站<br>我都不知道这玩意偷了能干嘛<br>基于bootstrap5实现</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li><span id="visitCount">加载中...</span> 次访问</li>
+                <li class="ms-3"><a class="text-muted" href="https://github.com/qsxes"><i class="bi bi-github"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://space.bilibili.com/3546972220819463?spm_id_from=333.1007.0.0"><i class="bi bi-tv-fill"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://tieba.baidu.com/home/main?id=tb.1.5cdda606.whVGonaMXrmknIO1TGdfHA&fr=personalize_page"><i class="bi bi-clipboard"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/@ncnmb"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+        </footer>
+
+        <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" id="targetLinks">
+            点<br>
+            我<br>
+            打<br>
+            开<br>
+            锚<br>
+            点<br>
+            链<br>
+            接<br>
+            <span>-></span>
+        </button>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">锚点链接</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    根据游戏中次大陆划分，如找不到请使用搜索关键词功能
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                印度
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                东印度
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                大洋洲
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                中国
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                中国
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                西欧
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                东欧
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                鞑靼
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                远东
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                北非
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                南非
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                亚马逊
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                安第斯
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                北美洲
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                中美洲
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">空</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                黎凡特
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#哈桑凯伊夫">哈桑凯伊夫</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                波斯
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#阿尔达比勒">阿尔达比勒</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+<script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // 初始化页面所有带 data-bs-toggle="popover" 的元素
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+</script>
+</body>
+<script src="pjJS/all.js"></script>
+<script>
+    //保证DOM加载完毕后执行回调函数,事件监听
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchBtn = document.getElementById('search');
+        const keywordInput = document.getElementById('keyWordInput');
+
+        //事件监听搜索框搜索按钮，点击时触发搜索函数
+        searchBtn.addEventListener('click', function() {
+            const keyword = keywordInput.value.trim().toLowerCase();
+
+            // 如果输入框为空，恢复页面默认状态（去除选择类'selectTagBox'）
+            if (keyword === '') {
+                alert('输入框为空！恢复默认标签');
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    item.style.display = ''; // 恢复显示
+                    const body = item.querySelector('.accordion-body');
+                    //找到每一个折叠卡片，并移除展开的selecTagBox类
+                    //判断手风琴折叠标签是否存在，防御性编程
+                    if (body) body.classList.remove('selectTagBox');
+                });
+                return; // 退出函数，不执行后续搜索
+            }
+
+            // 如果输入不为空进行根据关键字隐藏手风琴组件的操作
+            const items = document.querySelectorAll('.accordion-item');//找到每一个手风琴折叠标签
+
+            //遍历折叠标签集合
+            items.forEach(item => {
+
+                //获取卡片的按钮元素
+                const button = item.querySelector('.accordion-header button');
+
+                //获取按钮文本元素，如果按钮不存在则变量为空，防御性编程
+                const buttonText = button ? button.textContent.trim().toLowerCase() : '';
+
+                //获取h4标题下的span
+                const countrySpans = item.querySelectorAll('h4 > span');
+
+                //将元素列表集合转为数组
+                const spansArray = Array.from(countrySpans);
+
+                //获取卡片的主题内容
+                const body = item.querySelector('.accordion-body');
+
+                // 判断是否应该显示当前卡片的布尔值
+                let shouldShow = false;
+
+                //如果卡片标题包含关键字文本，则布尔值为真
+                if (buttonText.includes(keyword)) {
+                    shouldShow = true;
+                } else {
+
+                    //否则检查数组是否有一个span标签内满足包含关键字的条件，如果又一个满足则布尔值为真
+                    shouldShow = spansArray.some(span =>
+                        span.textContent.trim().toLowerCase().includes(keyword)
+                    );
+                }
+                //如果布尔值为真
+                if (shouldShow) {
+                    // 切换卡片的display属性为默认，显示卡片
+                    item.style.display = '';
+
+                    // 展开折叠内容
+                    //找到展开类
+                    const collapse = item.querySelector('.accordion-collapse');
+                    //防御编程
+                    if (collapse) {
+                        //如果存在展开类，添加show类进行展开
+                        collapse.classList.add('show');
+                    }
+
+                    //如果按钮存在,防御编程
+                    if (button) {
+                        //去除关闭展开类，添加无障碍屏幕阅读器为展开
+                        button.classList.remove('collapsed');
+                        button.setAttribute('aria-expanded', 'true');
+                    }
+
+                    // 高亮处理：只有至少一个国家名包含关键字时，给 .accordion-body 添加类'selectTagBox'
+                    const hasMatchingCountry = spansArray.some(span =>
+                        span.textContent.trim().toLowerCase().includes(keyword)
+                    );
+
+                    //如果手风琴存在，防御编程
+                    if (body) {
+                        //如果与国家名匹配
+                        if (hasMatchingCountry) {
+                            //添加高亮类
+                            body.classList.add('selectTagBox');
+                        } else {
+                            //去除高亮类
+                            body.classList.remove('selectTagBox');
+                        }
+                    }
+                } else {
+                    // 隐藏卡片，设置display为none，并移除可能的高亮
+                    item.style.display = 'none';
+                    if (body) {
+                        body.classList.remove('selectTagBox');
+                    }
+                }
+            });
+        });
+    });
+</script>
+</html>

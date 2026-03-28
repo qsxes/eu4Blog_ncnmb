@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>君主特质</title>
+    <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pjCSS/all.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">ncnmb的欧陆风云4日志</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="bioLinks">
+                        <i class="bi bi-link"></i>
+                        ncnmb的社交媒体
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://space.bilibili.com/3546972220819463?spm_id_from=333.1007.0.0"><i class="bi bi-tv-fill"></i>bilibili</a></li>
+                        <li><a class="dropdown-item" href="https://tieba.baidu.com/home/main?id=tb.1.5cdda606.whVGonaMXrmknIO1TGdfHA&fr=personalize_page"><i class="bi bi-clipboard"></i>贴吧</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/qsxes"><i class="bi bi-github"></i>github</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/@ncnmb"><i class="bi bi-youtube"></i>youtube</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">欢迎各位追踪我的各个平台账号:<br><br>->b站和YouTube有长视频版本<br>->贴吧和本网站提供文字版本<br>->github可下载离线网页备份</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-link-45deg"></i>
+                        友情链接
+                    </a>
+                    <ul class="dropdown-menu friendLinks">
+                        <li><a class="dropdown-item" href="https://tieba.baidu.com/f?kw=%E6%AC%A7%E9%99%86%E9%A3%8E%E4%BA%914&fr=personalize_page"><i class="bi bi-link-45deg"></i>欧陆风云4贴吧</a></li>
+                        <li><a class="dropdown-item" href="https://eu4cn.com"><i class="bi bi-link-45deg"></i>欧陆风云4中文维基</a></li>
+                        <li><a class="dropdown-item" href="https://anbennar.fandom.com/wiki/Anbennar_Wiki"><i class="bi bi-link-45deg"></i>安本纳尔官方维基</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-tools"></i>
+                        工具页面
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="consoleCode.html"><i class="bi bi-code-slash"></i>控制台代码集合</a></li>
+                        <li><a class="dropdown-item" href="usefulEvent.html"><i class="bi bi-code-slash"></i>有用控制台事件集合</a></li>
+                        <li><a class="dropdown-item" href="goodTrait.html"><i class="bi bi-code-slash"></i>君主特质</a></li>
+                        <li><a class="dropdown-item" href="picture.html"><i class="bi bi-file-zip"></i>原版加载图片资源</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" onsubmit="return false">
+                <input class="form-control me-2" type="search" placeholder="请输入关键字" aria-label="Search" id="keyWordInput" data-bs-toggle="popover"
+                       data-bs-trigger="focus"
+                       data-bs-title="输入框为空时,点击“搜索”复原"
+                       data-bs-content=""
+                       tabindex="0">
+                <button class="btn btn-outline-success" type="submit" id="search">搜索</button>
+            </form>
+        </div>
+    </div>
+</nav>
+    <div class="container" id="consoleCode">
+        <div class="container">
+            <table class="wikitable table table-striped">
+                <tbody>
+                <th>事件原名称</th>
+                <th>名称翻译</th>
+                <th>事件ID
+                </th>
+                <tr>
+                    <td><b>700</b></td>
+                    <td>选举！</td>
+                    <td>使玩家当前统治者增加 1  &amp; 1 &amp; 1  (将取代皇后摄政或者摄政议会) 并且获得50/50/50</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_azt.22</b></td>
+                    <td>血溅三尺</td>
+                    <td>使玩家当前统治者增加  1 &amp; 2，增加后大于6的属性转为100点对应点数。</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_hol.3502</b></td>
+                    <td>宪政主义与三级会议</td>
+                    <td>政体转变为共和制。</td>
+                </tr>
+                <tr>
+                    <td><b>emp_mission_events.7</b></td>
+                    <td>诺曼底公爵戒指</td>
+                    <td>王冠领地+2%。</td>
+                </tr>
+                <tr>
+                    <td><b>862</b></td>
+                    <td>新大陆的召唤</td>
+                    <td>获得25陆军传统的征服者/全局移民增长+25</td>
+                </tr>
+                <tr>
+                    <td><b>881</b></td>
+                    <td>商人组织探险</td>
+                    <td>获得20海军传统的探险家，1艘大船</td>
+                </tr>
+                <tr>
+                    <td><b>5056</b></td>
+                    <td>外交侮辱</td>
+                    <td>获得相邻国家外交侮辱的宣战理由/+60相邻国家关系</td>
+                </tr>
+                <tr>
+                    <td><b>5073 [&lt;省份ID&gt;]</b></td>
+                    <td>开拓荒地</td>
+                    <td>对指定省份增加发展度、税基等。</td>
+                </tr>
+                <tr>
+                    <td><b>9469</b></td>
+                    <td>明亮的星辰</td>
+                    <td>选择6 、6 或6 的继承人。</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_jap.61 [&lt;省份ID&gt;]</b></td>
+                    <td>在佐渡岛发现金矿</td>
+                    <td>开始生产 黄金。</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_sax.3 [&lt;省份ID&gt;]</b></td>
+                    <td>莱比锡繁荣</td>
+                    <td>指定省份开始转产 纸张，+3税收，+3生产，无贸易中心时+1级贸易中心。</td>
+                </tr>
+                <tr>
+                    <td><b>new_flavour_mlo.15 [&lt;省份ID&gt;]</b></td>
+                    <td>丝绸</td>
+                    <td>指定省份开始转产 丝绸，+2生产，但花费100外交点数。</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_pow.5</b></td>
+                    <td>欧洲贸易</td>
+                    <td>随机省份开始转产 铁（或羊毛），但失去1点生产。</td>
+                </tr>
+                <tr>
+                    <td><b>colonial.12 [&lt;省份ID&gt;]</b></td>
+                    <td>狩猎的召唤</td>
+                    <td>指定省份开始转产 皮毛。</td>
+                </tr>
+                <tr>
+                    <td><b>colonial.13 [&lt;省份ID&gt;]</b></td>
+                    <td>毛皮贸易萎缩</td>
+                    <td>指定省份开始转产 船具 / 谷物。</td>
+                </tr>
+                <tr>
+                    <td><b>colonial.18 [&lt;省份ID&gt;]</b></td>
+                    <td>新大陆咖啡</td>
+                    <td>指定省份开始转产 咖啡。</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_jap.23</b></td>
+                    <td>亨保改革</td>
+                    <td>重商主义+5%。</td>
+                </tr>
+                <tr>
+                    <td><b>ideagroups.2012</b></td>
+                    <td>大阶层会议</td>
+                    <td>所有阶层忠诚+10%。</td>
+                </tr>
+                <tr>
+                    <td><b>burghers_estate_events.1</b></td>
+                    <td>市民阶层的发展</td>
+                    <td>市民阶层的影响力提高10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>burghers_estate_events.3</b></td>
+                    <td>市民阶层的衰落</td>
+                    <td>市民阶层的影响力减少10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>brahmins_estate_events.4</b></td>
+                    <td>婆罗门种姓的崛起</td>
+                    <td>婆罗门阶层的影响力提高10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>brahmins_estate_events.5</b></td>
+                    <td>婆罗门势力衰落</td>
+                    <td>婆罗门阶层的影响力减少10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>cossack_estate_events.6</b></td>
+                    <td>哥萨克阶级影响力的提升</td>
+                    <td>哥萨克阶层的影响力提高10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>cossack_estate_events.7</b></td>
+                    <td>哥萨克阶级势力的衰落</td>
+                    <td>哥萨克阶层的影响力减少10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>church_estate_events.2</b></td>
+                    <td>教士势力扩张</td>
+                    <td>教士阶层的影响力提高10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>church_estate_events.3</b></td>
+                    <td>教士势力丧失</td>
+                    <td>教士阶层的影响力减少10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>dhimmi_estate_events.3</b></td>
+                    <td>宗教实用主义</td>
+                    <td>齐米阶层的影响力提高10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>dhimmi_estate_events.4</b></td>
+                    <td>齐米阶层的边缘化</td>
+                    <td>齐米阶层的影响力减少10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>nobles_estate_events.2</b></td>
+                    <td>贵族势力扩张</td>
+                    <td>贵族阶层的影响力提高10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>nobles_estate_events.5</b></td>
+                    <td>贵族势力衰落</td>
+                    <td>贵族阶层的影响力减少10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>tribal_estate_events.2</b></td>
+                    <td>部落影响力的壮大</td>
+                    <td>部族阶层的影响力提高10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>tribal_estate_events.3</b></td>
+                    <td>部落影响力的衰败</td>
+                    <td>部族阶层的影响力减少10，持续15年。</td>
+                </tr>
+                <tr>
+                    <td><b>ideagroups.606</b></td>
+                    <td>提高声誉</td>
+                    <td>获得1外交声誉持续十年。</td>
+                </tr>
+                <tr>
+                    <td><b>ideagroups.1505</b></td>
+                    <td>提高声誉</td>
+                    <td>获得1外交声誉持续十年。(可与上面的叠加)</td>
+                </tr>
+                <tr>
+                    <td><b>ideagroups.1802</b></td>
+                    <td>受欢迎的贵族</td>
+                    <td>获得1外交声誉持续十年。(可与上面的叠加)</td>
+                </tr>
+                <tr>
+                    <td><b>subject_interaction_events.34</b></td>
+                    <td>忠诚的国民</td>
+                    <td>获得1外交声誉持续五年，外交合并花费-15%。(可与上面的叠加)</td>
+                </tr>
+                <tr>
+                    <td><b>ideagroups.1801</b></td>
+                    <td>我们的理由正当</td>
+                    <td>获得 "合法理由" 修正效果持续10年，减少 20% 侵略扩张</td>
+                </tr>
+                <tr>
+                    <td><b>ideagroups.1</b></td>
+                    <td>新的国家传统和野心</td>
+                    <td>获得符合当前国家代码的理念组。</td>
+                </tr>
+                <tr>
+                    <td><b>muslim_school_events.20</b></td>
+                    <td>[Root.GetName]的教法学派</td>
+                    <td>选择一个伊斯兰教法学派。</td>
+                </tr>
+                <tr>
+                    <td><b>revolution.10</b></td>
+                    <td>革命来临</td>
+                    <td>革命</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_mng.34</b></td>
+                    <td>大运河</td>
+                    <td>君主buff：减50建筑时间减15建筑花费，有3个特质后再用</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_jap.23</b></td>
+                    <td>亨保改革</td>
+                    <td>君主buff：（三选一）1、全局贸易竞争力20%，2、陆军士气10%+人力10%，3、税收10%</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_jap.6</b></td>
+                    <td>兰学</td>
+                    <td>君主buff：（二选一）1、传教5%，2、科技花费-5%但稳定费用5%</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_per.50</b></td>
+                    <td>圣城</td>
+                    <td>君主buff：传教2%，但加耶路撒冷发展度</td>
+                </tr>
+                <tr>
+                    <td><b>elective_monarchy.11</b></td>
+                    <td>改宗</td>
+                    <td>君主buff：传教2%，但-1异端容忍</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_hab.16</b></td>
+                    <td>梅尔希奥·克莱西</td>
+                    <td>君主buff：传教1%，+1传教士，+15改革进度</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_vij.3</b></td>
+                    <td>牛神庙</td>
+                    <td>君主buff：传教1%，-1全国叛乱，但花少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_vij.4</b></td>
+                    <td>吉祥尊庙</td>
+                    <td>君主buff：传教1%，-1全国叛乱，但花少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_ayu.6</b></td>
+                    <td>柴瓦塔纳兰寺</td>
+                    <td>君主buff：传教1%，-1全国叛乱，但花少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_ayu.8</b></td>
+                    <td>佛迹寺</td>
+                    <td>君主buff：传教1%，-1全国叛乱，但花少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_ayu.10</b></td>
+                    <td>拉嘉布拉纳寺</td>
+                    <td>君主buff：传教1%，-1全国叛乱，但花少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>protestantism_events.19</b></td>
+                    <td>值得一场弥撒</td>
+                    <td>君主buff：异端传教1.5%</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_brapru.7</b></td>
+                    <td>腓特烈大帝的开明改革</td>
+                    <td>君主buff：（二选一）科技花费-25%，理念花费-25%</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_per.3</b></td>
+                    <td>阿巴斯大帝的顾问们</td>
+                    <td>君主buff：科技花费-20%</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_brapru.14</b></td>
+                    <td>普鲁士天文表</td>
+                    <td>君主buff：科技花费-10%，+1创新度，但花费大量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_son.2</b></td>
+                    <td>廷巴克图的黄金时代</td>
+                    <td>君主buff：科技花费-10%，理念花费-10%，+3可能顾问</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_tur.3377	</b></td>
+                    <td>娶一位希腊妻子</td>
+                    <td>君主buff：科技花费-10%，理念花费-10%，娶一位高属性希腊王后</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_pol.3</b></td>
+                    <td>波兰墨丘利常识报</td>
+                    <td>君主buff：科技花费-5%，理念花费-5%，但花费少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>muslim_dlc.12</b></td>
+                    <td>米安·米尔</td>
+                    <td>君主buff：理念花费-5%，但花费少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>muslim_dlc.18</b></td>
+                    <td>礼萨·阿巴斯</td>
+                    <td>君主buff：理念花费-5%，但花费少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>muslim_dlc.19</b></td>
+                    <td>巴哈丁·阿米利</td>
+                    <td>君主buff：理念花费-5%，但花费少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>muslim_dlc.23</b></td>
+                    <td>谢拉夫丁·撒本久奥卢</td>
+                    <td>君主buff：理念花费-5%，但花费少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>muslim_dlc.24</b></td>
+                    <td>比里安迪</td>
+                    <td>君主buff：理念花费-5%，但花费少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_mch.10</b></td>
+                    <td>七大恨</td>
+                    <td>君主buff：围城20%，+1进攻掷筛</td>
+                </tr>
+                <tr>
+                    <td><b>random_event.9</b></td>
+                    <td>我们有人作为内应</td>
+                    <td>君主buff：围城5%</td>
+                </tr>
+                <tr>
+                    <td><b>personality_events.3</b></td>
+                    <td>造枪术上的进步</td>
+                    <td>君主buff：步兵战斗能力5%，但花费少量金钱</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_boh.16</b></td>
+                    <td>大摩拉维亚的遗产</td>
+                    <td>君主buff：军事战术+0.1，君主军事能力+2</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_oir.2</b></td>
+                    <td>明朝天子受俘</td>
+                    <td>君主buff：围城15%，造核花费-10%，战争分数花费-10%，但大明不能用</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_mng.41</b></td>
+                    <td>大报恩寺琉璃塔</td>
+                    <td>君主buff：所有点数花费-2.5%，顾问花费-10%</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_tur.3374	</b></td>
+                    <td>米马尔·希南的伟大建造</td>
+                    <td>君主buff：发展成本-10%，建造花费-10%</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_dan.7</b></td>
+                    <td>巴伐利亚的遗产</td>
+                    <td>君主buff：年度税收+8</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_liv.25</b></td>
+                    <td>摄政的职份</td>
+                    <td>君主buff：（三选一）1、+2外交声誉+1外交关系，2、生产效率20%建造花费-20%，3、陆军士气10%陆军传统+0.5</td>
+                </tr>
+                <tr>
+                    <td><b>incidents_bur_inheritance.6</b></td>
+                    <td>摄政的法律</td>
+                    <td>君主buff：（二选一）1、+2外交声誉，2、改善关系10%</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_hol.3713</b></td>
+                    <td>德·维特</td>
+                    <td>君主buff：+1外交声誉，+1外交关系</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_jap.44</b></td>
+                    <td>大名的刀剑</td>
+                    <td>君主buff：+1外交声誉</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_pap.18</b></td>
+                    <td>教宗的丑闻</td>
+                    <td>君主buff：（外交为5或6时）+1外交声誉，（外交为0-4时）-2外交声誉</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_fra.105</b></td>
+                    <td>美人心计</td>
+                    <td>君主buff：间谍察觉50%，人情增长25%</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_rus.45</b></td>
+                    <td>西式军队</td>
+                    <td>军事单位变为西欧组，训练度5%</td>
+                </tr>
+                <tr>
+                    <td><b>sunset_invasion.1</b></td>
+                    <td>篡夺者的命运</td>
+                    <td>（三选一）1、科技组和军事单位组均变为高等美洲，2、2%传教，3、行政容量10%相容文化省份人力10%</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_gbr.13</b></td>
+                    <td>皇家学会</td>
+                    <td>首都建成大学，并会在新思潮出现时自动开始传播。</td>
+                </tr>
+                <tr>
+                    <td><b>colonial_nation.191</b></td>
+                    <td>这里没有眼睛</td>
+                    <td>指定省份获得寺庙。</td>
+                </tr>
+                <tr>
+                    <td><b>innovativeness_events.15</b></td>
+                    <td>珍奇屋</td>
+                    <td>随机省份获得寺庙。</td>
+                </tr>
+                <tr>
+                    <td><b>flavor_inc.26</b></td>
+                    <td>赋役</td>
+                    <td>还没有工坊或兵营的最高发展度省份得到兵营或工坊，物产是黄金的省份无法得到工坊。</td>
+                </tr>
+                <tr>
+                    <td><b>seven_cities_events.202</b></td>
+                    <td>黄金七城</td>
+                    <td>指定省份加大量发展度和省份buff，事件除了202还有7个，代码分别是205、208、211、214、217、220、223，可自行尝试。</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">&copy; 网友ncnmb全网唯一指定网站<br>我都不知道这玩意偷了能干嘛<br>基于bootstrap5实现</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="https://github.com/qsxes"><i class="bi bi-github"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://space.bilibili.com/3546972220819463?spm_id_from=333.1007.0.0"><i class="bi bi-tv-fill"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://tieba.baidu.com/home/main?id=tb.1.5cdda606.whVGonaMXrmknIO1TGdfHA&fr=personalize_page"><i class="bi bi-clipboard"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/@ncnmb"><i class="bi bi-youtube"></i></a></li>
+    </ul>
+</footer>
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">&copy; 网友ncnmb全网唯一指定网站<br>我都不知道这玩意偷了能干嘛<br>基于bootstrap5实现</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="https://github.com/qsxes"></a><i class="bi bi-github"></i></li>
+        <li class="ms-3"><a class="text-muted" href="https://space.bilibili.com/3546972220819463?spm_id_from=333.1007.0.0"></a><i class="bi bi-tv-fill"></i></li>
+        <li class="ms-3"><a class="text-muted" href="https://tieba.baidu.com/home/main?id=tb.1.5cdda606.whVGonaMXrmknIO1TGdfHA&fr=personalize_page"></a><i class="bi bi-clipboard"></i></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/@ncnmb"></a><i class="bi bi-youtube"></i></li>
+    </ul>
+</footer>
+<script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // 初始化页面所有带 data-bs-toggle="popover" 的元素
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+</script>
+</body>
+<script src="pjJS/all.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchBtn = document.getElementById('search');
+        const keywordInput = document.getElementById('keyWordInput');
+
+        searchBtn.addEventListener('click', function() {
+            const keyword = keywordInput.value.trim().toLowerCase();
+
+            // 获取表格主体中的所有数据行（排除表头行）
+            const rows = document.querySelectorAll('tbody tr');
+
+            if (keyword === '') {
+                // 如果输入为空，恢复所有行的显示
+                rows.forEach(row => {
+                    row.style.display = '';
+                });
+                return;
+            }
+
+            // 遍历每一行，判断是否包含关键字
+            rows.forEach(row => {
+                let matched = false;
+                // 获取该行中所有单元格（td）
+                const cells = row.querySelectorAll('td');
+                for (let cell of cells) {
+                    const cellText = cell.textContent.trim().toLowerCase();
+                    if (cellText.includes(keyword)) {
+                        matched = true;
+                        break;
+                    }
+                }
+                // 根据匹配结果显示或隐藏行
+                row.style.display = matched ? '' : 'none';
+            });
+        });
+    });
+</script>
+</html>
