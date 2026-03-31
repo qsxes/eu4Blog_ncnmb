@@ -313,3 +313,14 @@ aside{
 #pictureWeb i{
     font-size: 4rem;
 }
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #ffffff;  /* 浅灰 */
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #d9d9d9;  /* 深灰 */
+}
+
+.table-striped > tbody > tr:hover {
+    background-color: #c0c0c0;  /* 悬停时的中间色 */
+}
